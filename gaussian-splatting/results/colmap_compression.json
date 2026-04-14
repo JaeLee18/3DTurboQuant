@@ -68,6 +68,78 @@
       "comp_psnr": 28.302962875366212,
       "psnr_drop": -1.2788467407226562,
       "total_time_s": 49.86405316891614
+    },
+    {
+      "scene": "room",
+      "n_gaussians": 1250974,
+      "compression_ratio": 11.193986919450767,
+      "original_size_bytes": 295229864,
+      "compressed_size_bytes": 26373969,
+      "compression_time_s": 8.840392351150513,
+      "orig_psnr": 33.605994415283206,
+      "comp_psnr": 32.41758651733399,
+      "psnr_drop": -1.1884078979492188,
+      "total_time_s": 40.31327247619629
+    },
+    {
+      "scene": "stump",
+      "n_gaussians": 4027664,
+      "compression_ratio": 10.984753645475974,
+      "original_size_bytes": 950528704,
+      "compressed_size_bytes": 86531636,
+      "compression_time_s": 33.938594818115234,
+      "orig_psnr": 24.205281448364257,
+      "comp_psnr": 21.467420196533205,
+      "psnr_drop": -2.7378612518310526,
+      "total_time_s": 77.67296528816223
+    },
+    {
+      "scene": "treehill",
+      "n_gaussians": 3040580,
+      "compression_ratio": 11.394858691974486,
+      "original_size_bytes": 717576880,
+      "compressed_size_bytes": 62973741,
+      "compression_time_s": 24.64073872566223,
+      "orig_psnr": 19.219071197509766,
+      "comp_psnr": 18.98396873474121,
+      "psnr_drop": -0.2351024627685554,
+      "total_time_s": 66.15839743614197
+    },
+    {
+      "scene": "truck",
+      "n_gaussians": 2063184,
+      "compression_ratio": 10.946140318268254,
+      "original_size_bytes": 486911424,
+      "compressed_size_bytes": 44482476,
+      "compression_time_s": 15.020507097244263,
+      "orig_psnr": 25.98692741394043,
+      "comp_psnr": 24.89853172302246,
+      "psnr_drop": -1.0883956909179666,
+      "total_time_s": 28.793736934661865
+    },
+    {
+      "scene": "train",
+      "n_gaussians": 1091687,
+      "compression_ratio": 10.790906739695549,
+      "original_size_bytes": 257638132,
+      "compressed_size_bytes": 23875485,
+      "compression_time_s": 7.067369699478149,
+      "orig_psnr": 24.43452682495117,
+      "comp_psnr": 21.93036804199219,
+      "psnr_drop": -2.5041587829589815,
+      "total_time_s": 15.320760011672974
+    },
+    {
+      "scene": "playroom",
+      "n_gaussians": 1833144,
+      "compression_ratio": 10.058615638394821,
+      "original_size_bytes": 432621984,
+      "compressed_size_bytes": 43010092,
+      "compression_time_s": 14.124835729598999,
+      "orig_psnr": 31.174340438842773,
+      "comp_psnr": 31.17630615234375,
+      "psnr_drop": 0.001965713500975852,
+      "total_time_s": 26.52921223640442
     }
   ],
   "failures": []
