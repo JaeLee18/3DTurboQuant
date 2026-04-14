@@ -7,8 +7,14 @@ simple uniform scalar quantization. Output is a compressed .npz file.
 Supports aggressive compression via Gaussian pruning, SH band truncation, and
 lower bit-widths for 15-25x compression ratios.
 
+Entropy backend options (--entropy):
+    npz   - np.savez_compressed (default, backward compatible)
+    zstd  - Morton sorting + sub-byte bit-packing + zstd level-19
+            Gives ~1.5-2x additional compression.  Output is .tsv4 format.
+
 Usage:
     python compress.py -m output/lego_wb -o compressed/lego.npz --sh_bits 3
+    python compress.py -m output/lego_wb -o compressed/lego.tsv4 --sh_bits 2 --entropy zstd
     python compress.py -m output/lego_wb -o compressed/lego_agg.npz --aggressive
 """
 
@@ -19,6 +25,11 @@ import numpy as np
 from plyfile import PlyData, PlyElement
 
 from turbo_quant.quantizer import TurboQuantizer
+from entropy_utils import (
+    morton_sort_gaussians,
+    pack_indices,
+    save_compressed as _save_zstd,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -226,12 +237,13 @@ def compress_gaussians(
     prune_ratio: float = 0.0,
     sh_degree: int = 3,
     seed: int = 0,
+    entropy: str = "npz",
 ) -> dict:
-    """Compress 3DGS attributes to a .npz file.
+    """Compress 3DGS attributes to a .npz or .tsv4 file.
 
     Args:
         attrs: Dict from load_ply_attributes (or synthetic).
-        output_path: Where to save the .npz file.
+        output_path: Where to save the compressed file.
         sh_bits: Bit-width for SH rest coefficients (TurboQuant).
         pos_bits: Bit-width for xyz positions (uniform).
         dc_bits: Bit-width for SH DC coefficients (uniform).
@@ -241,6 +253,7 @@ def compress_gaussians(
         prune_ratio: Fraction of Gaussians to prune (0.0 = none).
         sh_degree: Max SH degree to keep (3=all, 2=drop band3, 1=band1 only, 0=DC only).
         seed: Random seed for TurboQuantizer.
+        entropy: Entropy backend -- "npz" (default) or "zstd".
 
     Returns:
         Stats dict with keys: n_gaussians, n_gaussians_original,
@@ -266,6 +279,12 @@ def compress_gaussians(
         new_d = attrs["sh_rest"].shape[1]
         print(f"  SH truncated: {old_d} -> {new_d} dims "
               f"(degree {sh_degree})")
+
+    # --- Morton sorting (zstd backend only) ---
+    use_zstd = (entropy == "zstd")
+    if use_zstd:
+        attrs = morton_sort_gaussians(attrs)
+        print(f"  Morton-sorted {attrs['xyz'].shape[0]:,} Gaussians")
 
     N = attrs["xyz"].shape[0]
 

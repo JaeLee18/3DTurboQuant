@@ -1,0 +1,245 @@
+
+[1/24] Evaluating scene=lego, sh_bits=2 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=6.08x  PSNR: 35.91 -> 35.43 (-0.47 dB)  SSIM: 0.9833 -> 0.9813  LPIPS: 0.0155 -> 0.0170  (316.8s)
+
+[2/24] Evaluating scene=lego, sh_bits=3 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=5.35x  PSNR: 35.91 -> 35.70 (-0.21 dB)  SSIM: 0.9833 -> 0.9826  LPIPS: 0.0155 -> 0.0160  (370.9s)
+
+[3/24] Evaluating scene=lego, sh_bits=4 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=4.74x  PSNR: 35.91 -> 35.77 (-0.14 dB)  SSIM: 0.9833 -> 0.9829  LPIPS: 0.0155 -> 0.0158  (313.8s)
+
+[4/24] Evaluating scene=chair, sh_bits=2 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=5.99x  PSNR: 35.81 -> 35.41 (-0.40 dB)  SSIM: 0.9876 -> 0.9859  LPIPS: 0.0118 -> 0.0130  (305.3s)
+
+[5/24] Evaluating scene=chair, sh_bits=3 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=5.28x  PSNR: 35.81 -> 35.69 (-0.12 dB)  SSIM: 0.9876 -> 0.9870  LPIPS: 0.0118 -> 0.0122  (237.0s)
+
+[6/24] Evaluating scene=chair, sh_bits=4 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=4.68x  PSNR: 35.81 -> 35.76 (-0.05 dB)  SSIM: 0.9876 -> 0.9873  LPIPS: 0.0118 -> 0.0119  (207.8s)
+
+[7/24] Evaluating scene=drums, sh_bits=2 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=6.00x  PSNR: 26.18 -> 26.12 (-0.06 dB)  SSIM: 0.9548 -> 0.9534  LPIPS: 0.0368 -> 0.0388  (184.7s)
+
+[8/24] Evaluating scene=drums, sh_bits=3 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=5.29x  PSNR: 26.18 -> 26.16 (-0.02 dB)  SSIM: 0.9548 -> 0.9543  LPIPS: 0.0368 -> 0.0375  (184.5s)
+
+[9/24] Evaluating scene=drums, sh_bits=4 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=4.68x  PSNR: 26.18 -> 26.16 (-0.01 dB)  SSIM: 0.9548 -> 0.9545  LPIPS: 0.0368 -> 0.0371  (182.7s)
+
+[10/24] Evaluating scene=ficus, sh_bits=2 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=6.01x  PSNR: 34.91 -> 34.50 (-0.41 dB)  SSIM: 0.9873 -> 0.9861  LPIPS: 0.0117 -> 0.0132  (181.5s)
+
+[11/24] Evaluating scene=ficus, sh_bits=3 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=5.29x  PSNR: 34.91 -> 34.81 (-0.10 dB)  SSIM: 0.9873 -> 0.9870  LPIPS: 0.0117 -> 0.0121  (181.5s)
+
+[12/24] Evaluating scene=ficus, sh_bits=4 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=4.68x  PSNR: 34.91 -> 34.87 (-0.04 dB)  SSIM: 0.9873 -> 0.9872  LPIPS: 0.0117 -> 0.0118  (179.9s)
+
+[13/24] Evaluating scene=hotdog, sh_bits=2 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=6.02x  PSNR: 37.76 -> 37.20 (-0.55 dB)  SSIM: 0.9857 -> 0.9842  LPIPS: 0.0198 -> 0.0219  (180.1s)
+
+[14/24] Evaluating scene=hotdog, sh_bits=3 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=5.30x  PSNR: 37.76 -> 37.56 (-0.20 dB)  SSIM: 0.9857 -> 0.9851  LPIPS: 0.0198 -> 0.0205  (180.5s)
+
+[15/24] Evaluating scene=hotdog, sh_bits=4 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=4.69x  PSNR: 37.76 -> 37.63 (-0.13 dB)  SSIM: 0.9857 -> 0.9854  LPIPS: 0.0198 -> 0.0202  (183.6s)
+
+[16/24] Evaluating scene=materials, sh_bits=2 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=6.01x  PSNR: 30.12 -> 29.74 (-0.39 dB)  SSIM: 0.9617 -> 0.9575  LPIPS: 0.0330 -> 0.0399  (188.9s)
+
+[17/24] Evaluating scene=materials, sh_bits=3 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=5.29x  PSNR: 30.12 -> 30.03 (-0.09 dB)  SSIM: 0.9617 -> 0.9604  LPIPS: 0.0330 -> 0.0351  (187.2s)
+
+[18/24] Evaluating scene=materials, sh_bits=4 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=4.69x  PSNR: 30.12 -> 30.09 (-0.03 dB)  SSIM: 0.9617 -> 0.9613  LPIPS: 0.0330 -> 0.0337  (183.4s)
+
+[19/24] Evaluating scene=mic, sh_bits=2 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=6.01x  PSNR: 36.02 -> 35.50 (-0.51 dB)  SSIM: 0.9923 -> 0.9910  LPIPS: 0.0057 -> 0.0075  (190.5s)
+
+[20/24] Evaluating scene=mic, sh_bits=3 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=5.29x  PSNR: 36.02 -> 35.87 (-0.15 dB)  SSIM: 0.9923 -> 0.9919  LPIPS: 0.0057 -> 0.0063  (196.8s)
+
+[21/24] Evaluating scene=mic, sh_bits=4 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=4.69x  PSNR: 36.02 -> 35.94 (-0.07 dB)  SSIM: 0.9923 -> 0.9921  LPIPS: 0.0057 -> 0.0059  (234.3s)
+
+[22/24] Evaluating scene=ship, sh_bits=2 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=6.05x  PSNR: 31.07 -> 30.63 (-0.43 dB)  SSIM: 0.9076 -> 0.9029  LPIPS: 0.1058 -> 0.1113  (240.3s)
+
+[23/24] Evaluating scene=ship, sh_bits=3 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=5.32x  PSNR: 31.07 -> 30.90 (-0.17 dB)  SSIM: 0.9076 -> 0.9057  LPIPS: 0.1058 -> 0.1078  (245.6s)
+
+[24/24] Evaluating scene=ship, sh_bits=4 ...
+Loading trained model at iteration 30000
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+  ratio=4.71x  PSNR: 31.07 -> 30.95 (-0.11 dB)  SSIM: 0.9076 -> 0.9065  LPIPS: 0.1058 -> 0.1068  (264.1s)
+
+Scene         b   Ratio  PSNR_orig  PSNR_comp    Drop   SSIM_d  LPIPS_d    Time
+-------------------------------------------------------------------------------
+lego_wb       2    6.08x      35.91      35.43   -0.47  -0.0020  +0.0016  290.7s
+lego_wb       3    5.35x      35.91      35.70   -0.21  -0.0007  +0.0006  349.1s
+lego_wb       4    4.74x      35.91      35.77   -0.14  -0.0004  +0.0003  287.1s
+chair_wb      2    5.99x      35.81      35.41   -0.40  -0.0016  +0.0012  278.1s
+chair_wb      3    5.28x      35.81      35.69   -0.12  -0.0005  +0.0004  213.8s
+chair_wb      4    4.68x      35.81      35.76   -0.05  -0.0002  +0.0002  185.8s
+drums_wb      2    6.00x      26.18      26.12   -0.06  -0.0014  +0.0020  164.6s
+drums_wb      3    5.29x      26.18      26.16   -0.02  -0.0005  +0.0007  164.1s
+drums_wb      4    4.68x      26.18      26.16   -0.01  -0.0003  +0.0003  164.3s
+ficus_wb      2    6.01x      34.91      34.50   -0.41  -0.0012  +0.0015  163.7s
+ficus_wb      3    5.29x      34.91      34.81   -0.10  -0.0004  +0.0004  163.4s
+ficus_wb      4    4.68x      34.91      34.87   -0.04  -0.0001  +0.0001  162.8s
+hotdog_wb     2    6.02x      37.76      37.20   -0.55  -0.0015  +0.0021  162.6s
+hotdog_wb     3    5.30x      37.76      37.56   -0.20  -0.0006  +0.0008  163.2s
+hotdog_wb     4    4.69x      37.76      37.63   -0.13  -0.0003  +0.0004  166.8s
+materials_w   2    6.01x      30.12      29.74   -0.39  -0.0042  +0.0069  169.0s
+materials_w   3    5.29x      30.12      30.03   -0.09  -0.0013  +0.0021  167.7s
+materials_w   4    4.69x      30.12      30.09   -0.03  -0.0004  +0.0007  165.3s
+mic_wb        2    6.01x      36.02      35.50   -0.51  -0.0013  +0.0018  171.7s
+mic_wb        3    5.29x      36.02      35.87   -0.15  -0.0004  +0.0005  177.5s
+mic_wb        4    4.69x      36.02      35.94   -0.07  -0.0002  +0.0002  214.2s
+ship_wb       2    6.05x      31.07      30.63   -0.43  -0.0047  +0.0055  216.0s
+ship_wb       3    5.32x      31.07      30.90   -0.17  -0.0019  +0.0020  218.0s
+ship_wb       4    4.71x      31.07      30.95   -0.11  -0.0011  +0.0009  240.7s
+
+Results saved to: /mnt/ssd1/idea/TurboQuant/gaussian-splatting/results/compression_eval_full.json
