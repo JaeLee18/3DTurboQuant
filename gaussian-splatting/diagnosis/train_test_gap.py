@@ -103,12 +103,14 @@ def compute_split_psnr(
 
 def main():
     import argparse
+    import json
 
     parser = argparse.ArgumentParser(description="Measure train/test PSNR gap for a 3DGS model")
     parser.add_argument("-m", "--model_path", required=True, help="Path to trained model output directory")
     parser.add_argument("-s", "--source_path", required=True, help="Path to dataset source directory")
     parser.add_argument("--iteration", type=int, default=30000, help="Checkpoint iteration (default: 30000)")
     parser.add_argument("--no_white_background", action="store_true", help="Use black background instead of white")
+    parser.add_argument("--output", type=str, default=None, help="Path to save results as JSON")
     args = parser.parse_args()
 
     white_background = not args.no_white_background
@@ -133,6 +135,12 @@ def main():
         print("Per-image test PSNRs:")
         for i, p in enumerate(results["test_psnrs"]):
             print(f"  test[{i:03d}]: {p:.2f} dB")
+
+    if args.output:
+        os.makedirs(os.path.dirname(os.path.abspath(args.output)), exist_ok=True)
+        with open(args.output, "w") as f:
+            json.dump(results, f, indent=2)
+        print(f"\nResults saved to {args.output}")
 
 
 if __name__ == "__main__":

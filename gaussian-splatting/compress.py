@@ -140,10 +140,10 @@ def compress_gaussians(
     attrs: dict,
     output_path: str,
     sh_bits: int = 3,
-    pos_bits: int = 8,
-    scale_bits: int = 6,
-    rot_bits: int = 4,
-    opacity_bits: int = 4,
+    pos_bits: int = 16,
+    scale_bits: int = 16,
+    rot_bits: int = 8,
+    opacity_bits: int = 8,
     seed: int = 0,
 ) -> dict:
     """Compress 3DGS attributes to a .npz file.
@@ -188,7 +188,7 @@ def compress_gaussians(
         }
 
     pos_q = _quant(attrs["xyz"], pos_bits, "pos")
-    dc_q = _quant(attrs["sh_dc"], pos_bits, "dc")  # reuse pos_bits for DC
+    dc_q = _quant(attrs["sh_dc"], 16, "dc")  # DC needs high precision too
     scale_q = _quant(attrs["scales"], scale_bits, "scale")
     rot_q = _quant(attrs["rotations"], rot_bits, "rot")
     opacity_q = _quant(attrs["opacity"], opacity_bits, "opacity")
@@ -243,10 +243,10 @@ def main():
     parser.add_argument("--iteration", type=int, default=None,
                         help="Iteration to load (default: latest)")
     parser.add_argument("--sh_bits", type=int, default=3)
-    parser.add_argument("--pos_bits", type=int, default=8)
-    parser.add_argument("--scale_bits", type=int, default=6)
-    parser.add_argument("--rot_bits", type=int, default=4)
-    parser.add_argument("--opacity_bits", type=int, default=4)
+    parser.add_argument("--pos_bits", type=int, default=16)
+    parser.add_argument("--scale_bits", type=int, default=16)
+    parser.add_argument("--rot_bits", type=int, default=8)
+    parser.add_argument("--opacity_bits", type=int, default=8)
     parser.add_argument("--seed", type=int, default=0)
     args = parser.parse_args()
 

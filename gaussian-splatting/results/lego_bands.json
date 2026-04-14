@@ -1,0 +1,27 @@
+{
+  "baseline_train_psnr": 39.97540895462036,
+  "baseline_test_psnr": 36.02509232521057,
+  "bands": {
+    "1": {
+      "train_psnr_zeroed": 36.54790525436401,
+      "test_psnr_zeroed": 34.02930310249329,
+      "train_drop": 3.427503700256352,
+      "test_drop": 1.9957892227172849,
+      "overfitting_ratio": 1.7173675763163885
+    },
+    "2": {
+      "train_psnr_zeroed": 36.816678981781,
+      "test_psnr_zeroed": 34.47738530158997,
+      "train_drop": 3.1587299728393603,
+      "test_drop": 1.5477070236206032,
+      "overfitting_ratio": 2.0409095033051132
+    },
+    "3": {
+      "train_psnr_zeroed": 37.19458034515381,
+      "test_psnr_zeroed": 34.81227149963379,
+      "train_drop": 2.7808286094665533,
+      "test_drop": 1.2128208255767845,
+      "overfitting_ratio": 2.2928602072314077
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "lego": {
+    "b2": {
+      "n_gaussians": 299766,
+      "compression_time_s": 2.528682457981631,
+      "compressed_size_bytes": 11637721,
+      "original_size_bytes": 70744776,
+      "compression_ratio": 6.078920090969701
+    },
+    "b3": {
+      "n_gaussians": 299766,
+      "compression_time_s": 2.433528461959213,
+      "compressed_size_bytes": 13216317,
+      "original_size_bytes": 70744776,
+      "compression_ratio": 5.352835892177828
+    },
+    "b4": {
+      "n_gaussians": 299766,
+      "compression_time_s": 1.390916440053843,
+      "compressed_size_bytes": 14910122,
+      "original_size_bytes": 70744776,
+      "compression_ratio": 4.744748299175553
+    }
+  },
+  "chair": {
+    "b2": {
+      "n_gaussians": 299114,
+      "compression_time_s": 2.500910136033781,
+      "compressed_size_bytes": 11777512,
+      "original_size_bytes": 70590904,
+      "compression_ratio": 5.993702574873199
+    },
+    "b3": {
+      "n_gaussians": 299114,
+      "compression_time_s": 2.399483466986567,
+      "compressed_size_bytes": 13377394,
+      "original_size_bytes": 70590904,
+      "compression_ratio": 5.276880085912099
+    },
+    "b4": {
+      "n_gaussians": 299114,
+      "compression_time_s": 1.2144581249449402,
+      "compressed_size_bytes": 15095673,
+      "original_size_bytes": 70590904,
+      "compression_ratio": 4.676234308997022
+    }
+  },
+  "drums": {
+    "b2": {
+      "n_gaussians": 316312,
+      "compression_time_s": 2.6420715139247477,
+      "compressed_size_bytes": 12434368,
+      "original_size_bytes": 74649632,
+      "compression_ratio": 6.003492256301245
+    },
+    "b3": {
+      "n_gaussians": 316312,
+      "compression_time_s": 2.5393500130157918,
+      "compressed_size_bytes": 14122883,
+      "original_size_bytes": 74649632,
+      "compression_ratio": 5.285721902532224
+    },
+    "b4": {
+      "n_gaussians": 316312,
+      "compression_time_s": 1.2926081100013107,
+      "compressed_size_bytes": 15936247,
+      "original_size_bytes": 74649632,
+      "compression_ratio": 4.684266753646577
+    }
+  },
+  "ficus": {
+    "b2": {
+      "n_gaussians": 178335,
+      "compression_time_s": 1.496372185065411,
+      "compressed_size_bytes": 7007677,
+      "original_size_bytes": 42087060,
+      "compression_ratio": 6.005850440880765
+    },
+    "b3": {
+      "n_gaussians": 178335,
+      "compression_time_s": 1.4330893099540845,
+      "compressed_size_bytes": 7961317,
+      "original_size_bytes": 42087060,
+      "compression_ratio": 5.286444441290304
+    },
+    "b4": {
+      "n_gaussians": 178335,
+      "compression_time_s": 0.7209126299712807,
+      "compressed_size_bytes": 8984149,
+      "original_size_bytes": 42087060,
+      "compression_ratio": 4.684590605075673
+    }
+  },
+  "hotdog": {
+    "b2": {
+      "n_gaussians": 158300,
+      "compression_time_s": 1.3466586669674143,
+      "compressed_size_bytes": 6207811,
+      "original_size_bytes": 37358800,
+      "compression_ratio": 6.01803115462117
+    },
+    "b3": {
+      "n_gaussians": 158300,
+      "compression_time_s": 1.2688842420466244,
+      "compressed_size_bytes": 7051997,
+      "original_size_bytes": 37358800,
+      "compression_ratio": 5.297619950774227
+    },
+    "b4": {
+      "n_gaussians": 158300,
+      "compression_time_s": 0.651653700042516,
+      "compressed_size_bytes": 7957475,
+      "original_size_bytes": 37358800,
+      "compression_ratio": 4.694805827225345
+    }
+  },
+  "materials": {
+    "b2": {
+      "n_gaussians": 237632,
+      "compression_time_s": 2.0111206559231505,
+      "compressed_size_bytes": 9330143,
+      "original_size_bytes": 56081152,
+      "compression_ratio": 6.010749460110097
+    },
+    "b3": {
+      "n_gaussians": 237632,
+      "compression_time_s": 1.9080446469597518,
+      "compressed_size_bytes": 10599949,
+      "original_size_bytes": 56081152,
+      "compression_ratio": 5.2907001722366775
+    },
+    "b4": {
+      "n_gaussians": 237632,
+      "compression_time_s": 0.9629670680733398,
+      "compressed_size_bytes": 11960490,
+      "original_size_bytes": 56081152,
+      "compression_ratio": 4.68886742934445
+    }
+  },
+  "mic": {
+    "b2": {
+      "n_gaussians": 275458,
+      "compression_time_s": 2.294743660953827,
+      "compressed_size_bytes": 10814366,
+      "original_size_bytes": 65008088,
+      "compression_ratio": 6.011271303375528
+    },
+    "b3": {
+      "n_gaussians": 275458,
+      "compression_time_s": 2.208491413970478,
+      "compressed_size_bytes": 12288848,
+      "original_size_bytes": 65008088,
+      "compression_ratio": 5.290006679226564
+    },
+    "b4": {
+      "n_gaussians": 275458,
+      "compression_time_s": 1.1233163699507713,
+      "compressed_size_bytes": 13873230,
+      "original_size_bytes": 65008088,
+      "compression_ratio": 4.685865368050555
+    }
+  },
+  "ship": {
+    "b2": {
+      "n_gaussians": 309987,
+      "compression_time_s": 2.6420667479978874,
+      "compressed_size_bytes": 12094364,
+      "original_size_bytes": 73156932,
+      "compression_ratio": 6.048844899988127
+    },
+    "b3": {
+      "n_gaussians": 309987,
+      "compression_time_s": 2.480051858932711,
+      "compressed_size_bytes": 13752142,
+      "original_size_bytes": 73156932,
+      "compression_ratio": 5.319675436742872
+    },
+    "b4": {
+      "n_gaussians": 309987,
+      "compression_time_s": 1.2825690211029723,
+      "compressed_size_bytes": 15536575,
+      "original_size_bytes": 73156932,
+      "compression_ratio": 4.708691072517592
+    }
+  }
+}

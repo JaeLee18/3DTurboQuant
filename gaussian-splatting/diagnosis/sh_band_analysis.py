@@ -149,6 +149,7 @@ def analyze_sh_bands(
 
 def main():
     import argparse
+    import json
 
     parser = argparse.ArgumentParser(
         description="Per-band SH overfitting analysis for a trained 3DGS model"
@@ -157,6 +158,7 @@ def main():
     parser.add_argument("-s", "--source_path", required=True, help="Path to dataset source directory")
     parser.add_argument("--iteration", type=int, default=30000, help="Checkpoint iteration (default: 30000)")
     parser.add_argument("--no_white_background", action="store_true", help="Use black background instead of white")
+    parser.add_argument("--output", type=str, default=None, help="Path to save results as JSON")
     args = parser.parse_args()
 
     white_background = not args.no_white_background
@@ -184,6 +186,18 @@ def main():
         )
     print()
     print("  R_k > 1 → band encodes overfitting; R_k >> 1 → strongly overfit.")
+
+    if args.output:
+        os.makedirs(os.path.dirname(os.path.abspath(args.output)), exist_ok=True)
+        # Convert int keys to strings for JSON
+        json_results = {
+            "baseline_train_psnr": results["baseline_train_psnr"],
+            "baseline_test_psnr": results["baseline_test_psnr"],
+            "bands": {str(k): v for k, v in results["bands"].items()},
+        }
+        with open(args.output, "w") as f:
+            json.dump(json_results, f, indent=2)
+        print(f"\nResults saved to {args.output}")
 
 
 if __name__ == "__main__":

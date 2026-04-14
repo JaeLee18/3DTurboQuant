@@ -1,0 +1,20 @@
+[
+  {
+    "scene": "lego_wb",
+    "sh_bits": 3,
+    "n_gaussians": 240670,
+    "compression_ratio": 7.401416193192739,
+    "compression_time_s": 2.937915842048824,
+    "original_size_bytes": 56798120,
+    "compressed_size_bytes": 7673953,
+    "psnr_orig": 2.53108419939701,
+    "psnr_comp": 2.480711331595634,
+    "ssim_orig": 0.25628435105085373,
+    "ssim_comp": 0.16663132943212985,
+    "lpips_orig": 0.5255503997206687,
+    "lpips_comp": 0.6082015624642372,
+    "render_time_s": 344.57830507005565,
+    "n_test_views": 200,
+    "total_time_s": 366.7117892210372
+  }
+]
