@@ -394,5 +394,41 @@
     "render_time_s": 215.97395303100348,
     "n_test_views": 200,
     "total_time_s": 240.26617391093168
+  },
+  {
+    "scene": "ship_wb",
+    "sh_bits": 3,
+    "n_gaussians": 309987,
+    "compression_ratio": 5.319675436742872,
+    "compression_time_s": 2.9486457030288875,
+    "original_size_bytes": 73156932,
+    "compressed_size_bytes": 13752142,
+    "psnr_orig": 31.065193335421558,
+    "psnr_comp": 30.896366947453615,
+    "ssim_orig": 0.9076051366329193,
+    "ssim_comp": 0.9057194581627845,
+    "lpips_orig": 0.10584083212539554,
+    "lpips_comp": 0.10784082809463143,
+    "render_time_s": 218.00915318797342,
+    "n_test_views": 200,
+    "total_time_s": 245.62478946405463
+  },
+  {
+    "scene": "ship_wb",
+    "sh_bits": 4,
+    "n_gaussians": 309987,
+    "compression_ratio": 4.708691072517592,
+    "compression_time_s": 1.270228793960996,
+    "original_size_bytes": 73156932,
+    "compressed_size_bytes": 15536575,
+    "psnr_orig": 31.065193335421558,
+    "psnr_comp": 30.952721977170103,
+    "ssim_orig": 0.9076051366329193,
+    "ssim_comp": 0.9065180823206902,
+    "lpips_orig": 0.10584083212539554,
+    "lpips_comp": 0.10678651189431548,
+    "render_time_s": 240.74693317210767,
+    "n_test_views": 200,
+    "total_time_s": 264.09847934299614
   }
 ]
