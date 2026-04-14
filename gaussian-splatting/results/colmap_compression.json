@@ -1,0 +1,74 @@
+{
+  "config": {
+    "sh_bits": 2,
+    "pos_bits": 14,
+    "dc_bits": 10,
+    "scale_bits": 8,
+    "rot_bits": 8,
+    "opacity_bits": 6,
+    "entropy": "zstd"
+  },
+  "results": [
+    {
+      "scene": "bonsai",
+      "n_gaussians": 1065930,
+      "compression_ratio": 10.765211434393356,
+      "original_size_bytes": 251559480,
+      "compressed_size_bytes": 23367816,
+      "compression_time_s": 7.0411712939385325,
+      "orig_psnr": 31.34793930053711,
+      "comp_psnr": 30.483214569091796,
+      "psnr_drop": -0.8647247314453139,
+      "total_time_s": 41.81320922798477
+    },
+    {
+      "scene": "counter",
+      "n_gaussians": 1050780,
+      "compression_ratio": 10.341860035373934,
+      "original_size_bytes": 247984080,
+      "compressed_size_bytes": 23978673,
+      "compression_time_s": 6.548576380009763,
+      "orig_psnr": 28.995964813232423,
+      "comp_psnr": 28.588897705078125,
+      "psnr_drop": -0.4070671081542976,
+      "total_time_s": 36.80881717102602
+    },
+    {
+      "scene": "flowers",
+      "n_gaussians": 2873224,
+      "compression_ratio": 10.7629510200164,
+      "original_size_bytes": 678080864,
+      "compressed_size_bytes": 63001389,
+      "compression_time_s": 24.574828390963376,
+      "orig_psnr": 20.666901779174804,
+      "comp_psnr": 19.709939193725585,
+      "psnr_drop": -0.9569625854492188,
+      "total_time_s": 78.25825477798935
+    },
+    {
+      "scene": "garden",
+      "n_gaussians": 4208958,
+      "compression_ratio": 10.42669823344237,
+      "original_size_bytes": 993314088,
+      "compressed_size_bytes": 95266408,
+      "compression_time_s": 40.49231282004621,
+      "orig_psnr": 24.012753295898438,
+      "comp_psnr": 23.56067886352539,
+      "psnr_drop": -0.452074432373049,
+      "total_time_s": 109.23239031806588
+    },
+    {
+      "scene": "kitchen",
+      "n_gaussians": 1537356,
+      "compression_ratio": 10.453517294822907,
+      "original_size_bytes": 362816016,
+      "compressed_size_bytes": 34707554,
+      "compression_time_s": 11.937700629932806,
+      "orig_psnr": 29.58180961608887,
+      "comp_psnr": 28.302962875366212,
+      "psnr_drop": -1.2788467407226562,
+      "total_time_s": 49.86405316891614
+    }
+  ],
+  "failures": []
+}
