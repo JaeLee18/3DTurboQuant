@@ -1,6 +1,6 @@
 #!/bin/bash
 # Train all 8 NeRF Synthetic scenes with white background
-PYTHON=/mnt/ssd1/conda_envs/nerf_tq/bin/python
+PYTHON=/mnt/ssd1/conda_envs/gs_compression/bin/python
 DATA_ROOT=data/nerf_synthetic
 cd /mnt/ssd1/idea/TurboQuant/gaussian-splatting
 
