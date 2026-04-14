@@ -243,6 +243,91 @@ def unpack_indices(packed, original_length, bits):
 
 
 # ---------------------------------------------------------------------------
+# 2b. Byte-shuffle filter (a la HDF5/Blosc)
+# ---------------------------------------------------------------------------
+
+def byte_shuffle(arr):
+    """Separate bytes of each element for better compression.
+
+    For a uint16 array, all high bytes come first, then all low bytes.
+    This groups similar-magnitude bytes together, creating long runs of
+    similar values that compress much better with LZ-family compressors.
+
+    Args:
+        arr: ndarray (any dtype with itemsize >= 2).
+
+    Returns:
+        Shuffled uint8 array of same total byte count.
+    """
+    arr = np.ascontiguousarray(arr)
+    raw = arr.tobytes()
+    itemsize = arr.dtype.itemsize
+    if itemsize <= 1:
+        return np.frombuffer(raw, dtype=np.uint8).copy()
+    nelem = len(raw) // itemsize
+    bytes_arr = np.frombuffer(raw, dtype=np.uint8).reshape(nelem, itemsize)
+    return bytes_arr.T.copy().flatten()
+
+
+def byte_unshuffle(shuffled, dtype):
+    """Reverse byte_shuffle.
+
+    Args:
+        shuffled: uint8 array from byte_shuffle.
+        dtype: original numpy dtype (e.g. np.uint16, np.float16).
+
+    Returns:
+        uint8 array of same length, ready to be frombuffer'd as dtype.
+    """
+    itemsize = np.dtype(dtype).itemsize
+    if itemsize <= 1:
+        return shuffled.copy()
+    nelem = len(shuffled) // itemsize
+    bytes_arr = shuffled.reshape(itemsize, nelem)
+    return bytes_arr.T.copy().flatten()
+
+
+# ---------------------------------------------------------------------------
+# 2c. Delta encoding for integer arrays
+# ---------------------------------------------------------------------------
+
+def delta_encode(arr):
+    """Row-wise delta encoding: store first row then differences.
+
+    After Morton sorting, consecutive rows have similar values, so
+    the deltas are small and highly compressible.
+
+    Args:
+        arr: integer ndarray of shape (N, D), any signed/unsigned type.
+
+    Returns:
+        deltas: int16 array of same shape (first row stored verbatim
+                as int16 offset from 0, subsequent rows store diff).
+    """
+    arr = np.ascontiguousarray(arr)
+    # Convert to int32 for safe subtraction, then store as int16
+    arr32 = arr.astype(np.int32)
+    deltas = np.empty_like(arr32, dtype=np.int16)
+    deltas[0] = arr32[0].astype(np.int16)
+    deltas[1:] = np.diff(arr32, axis=0).astype(np.int16)
+    return deltas
+
+
+def delta_decode(deltas, target_dtype=np.uint16):
+    """Undo delta encoding.
+
+    Args:
+        deltas: int16 array from delta_encode.
+        target_dtype: dtype of the original array.
+
+    Returns:
+        Reconstructed array with target_dtype.
+    """
+    # Cumulative sum in int32 to avoid overflow
+    return np.cumsum(deltas.astype(np.int32), axis=0).astype(target_dtype)
+
+
+# ---------------------------------------------------------------------------
 # 3. zstd binary format  (magic: TSv4)
 # ---------------------------------------------------------------------------
 

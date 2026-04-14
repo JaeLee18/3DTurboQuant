@@ -28,6 +28,8 @@ from turbo_quant.quantizer import TurboQuantizer
 from entropy_utils import (
     morton_sort_gaussians,
     pack_indices,
+    delta_encode,
+    byte_shuffle,
     save_compressed as _save_zstd,
 )
 
@@ -341,7 +343,39 @@ def compress_gaussians(
         save_dict.update(q_dict)
 
     os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
-    np.savez_compressed(output_path, **save_dict)
+
+    if use_zstd:
+        # Bit-pack SH indices before saving
+        if d > 0 and sh_bits <= 4:
+            packed, orig_len = pack_indices(sh_indices, sh_bits)
+            save_dict["sh_indices"] = packed
+            save_dict["sh_indices_shape"] = np.array(sh_indices.shape, dtype=np.int32)
+            save_dict["sh_packed"] = np.uint8(1)
+        else:
+            save_dict["sh_packed"] = np.uint8(0)
+
+        # Delta-encode position indices (biggest win from Morton locality)
+        save_dict["pos_idx"] = delta_encode(save_dict["pos_idx"])
+
+        # Byte-shuffle all multi-byte arrays for better LZ compression.
+        # Stores high bytes and low bytes separately, creating longer runs.
+        for prefix in ["pos", "dc", "scale", "rot", "opacity"]:
+            key = f"{prefix}_idx"
+            arr = save_dict[key]
+            save_dict[key] = byte_shuffle(arr)
+            save_dict[f"{key}_dtype"] = np.array(
+                list(str(arr.dtype).encode("utf-8")), dtype=np.uint8
+            )
+        # Byte-shuffle SH norms (float16)
+        if d > 0:
+            save_dict["sh_norms"] = byte_shuffle(save_dict["sh_norms"])
+
+        save_dict["delta_coded"] = np.uint8(1)  # pos only
+        save_dict["byte_shuffled"] = np.uint8(1)
+        save_dict["entropy"] = np.array(list(b"zstd"), dtype=np.uint8)
+        _save_zstd(output_path, save_dict, compression_level=19)
+    else:
+        np.savez_compressed(output_path, **save_dict)
 
     compression_time = time.perf_counter() - t0
     compressed_size = os.path.getsize(output_path)
@@ -388,6 +422,8 @@ def main():
                         help="Max SH degree to keep (3=all, 2=drop band3, 1=band1, 0=DC only)")
     parser.add_argument("--aggressive", action="store_true",
                         help="Aggressive compression: prune 50%%, SH degree 2, low bit-widths")
+    parser.add_argument("--entropy", type=str, default="npz", choices=["npz", "zstd"],
+                        help="Entropy backend: npz (default) or zstd (Morton + bit-pack + zstd)")
     args = parser.parse_args()
 
     # Apply aggressive defaults (individual args can still override)
@@ -414,7 +450,8 @@ def main():
     if args.output is None:
         model_name = os.path.basename(os.path.normpath(args.model_path))
         suffix = "_aggressive" if args.aggressive else ""
-        args.output = os.path.join("compressed", f"{model_name}{suffix}.npz")
+        ext = ".tsv4" if args.entropy == "zstd" else ".npz"
+        args.output = os.path.join("compressed", f"{model_name}{suffix}{ext}")
 
     # Find PLY file
     pc_dir = os.path.join(args.model_path, "point_cloud")
@@ -452,7 +489,8 @@ def main():
     print(f"  Settings: sh_bits={args.sh_bits}, pos_bits={args.pos_bits}, "
           f"dc_bits={args.dc_bits}, scale_bits={args.scale_bits}, "
           f"rot_bits={args.rot_bits}, opacity_bits={args.opacity_bits}")
-    print(f"  prune_ratio={args.prune_ratio}, sh_degree={args.sh_degree}")
+    print(f"  prune_ratio={args.prune_ratio}, sh_degree={args.sh_degree}, "
+          f"entropy={args.entropy}")
 
     stats = compress_gaussians(
         attrs, args.output,
@@ -465,6 +503,7 @@ def main():
         prune_ratio=args.prune_ratio,
         sh_degree=args.sh_degree,
         seed=args.seed,
+        entropy=args.entropy,
     )
 
     print(f"\nCompressed to: {args.output}")

@@ -1,13 +1,14 @@
 """Decompress TurboQuant-compressed 3DGS models.
 
-Reads .npz files produced by compress.py and reconstructs all Gaussian
+Reads .npz or .tsv4 files produced by compress.py and reconstructs all Gaussian
 attributes. Can optionally save the result to a PLY file compatible with the
 standard 3DGS renderer.
 
-Handles both v1 (full SH) and v2 (pruned/truncated SH) compressed files.
+Handles v1 (full SH), v2 (pruned/truncated SH), and v4 (zstd) compressed files.
 
 Usage:
     python decompress.py -i compressed/lego.npz -o decompressed/lego.ply
+    python decompress.py -i compressed/lego.tsv4 -o decompressed/lego.ply
 """
 
 import argparse
@@ -16,14 +17,34 @@ import numpy as np
 from plyfile import PlyData, PlyElement
 
 from compress import _uniform_dequantize, SH_BAND_DIMS
+from entropy_utils import (
+    load_compressed as _load_zstd,
+    unpack_indices,
+    delta_decode,
+    byte_unshuffle,
+)
 
 
 # ---------------------------------------------------------------------------
 # Decompression
 # ---------------------------------------------------------------------------
 
+def _load_data(compressed_path):
+    """Load compressed data from either .npz or .tsv4 format.
+
+    Returns a dict-like object (np.NpzFile or plain dict).
+    """
+    # Peek at magic bytes to decide format
+    with open(compressed_path, "rb") as f:
+        magic = f.read(4)
+    if magic == b"TSv4":
+        return _load_zstd(compressed_path)
+    else:
+        return np.load(compressed_path)
+
+
 def decompress_gaussians(compressed_path: str) -> dict:
-    """Decompress a .npz file back to 3DGS attributes.
+    """Decompress a .npz or .tsv4 file back to 3DGS attributes.
 
     SH rest is reconstructed via centroid lookup + inverse rotation (no
     TurboQuantizer needed at decompression time). Other attributes are
@@ -34,26 +55,55 @@ def decompress_gaussians(compressed_path: str) -> dict:
     the full 45-dim sh_rest for renderer compatibility.
 
     Args:
-        compressed_path: Path to the .npz file.
+        compressed_path: Path to the .npz or .tsv4 file.
 
     Returns:
         Dict with keys: xyz (N,3), sh_dc (N,3), sh_rest (N,45),
         opacity (N,1), scales (N,3), rotations (N,4).
     """
-    data = np.load(compressed_path)
+    data = _load_data(compressed_path)
 
-    N = int(data["n_gaussians"])
-    d = int(data["sh_d"])
+    def _scalar(key, default=None):
+        """Extract a scalar value from data, handling 0-d arrays."""
+        if key not in data:
+            return default
+        v = data[key]
+        return v.item() if hasattr(v, 'item') else v
 
-    # Read sh_degree if present (v2), default to 3 (v1 files)
-    sh_degree = int(data["sh_degree"]) if "sh_degree" in data else 3
+    N = int(_scalar("n_gaussians"))
+    d = int(_scalar("sh_d"))
+
+    # Read sh_degree if present (v2+), default to 3 (v1 files)
+    sh_degree = int(_scalar("sh_degree", 3))
+    sh_bits = int(_scalar("sh_bits", 3))
+
+    # Check if SH indices are bit-packed (zstd format)
+    sh_packed = bool(_scalar("sh_packed", 0))
+    is_byte_shuffled = bool(_scalar("byte_shuffled", 0))
 
     # --- SH rest: TurboQuant inverse ---
     if d > 0:
-        sh_indices = data["sh_indices"]        # (N, D) uint8
-        sh_norms = data["sh_norms"].astype(np.float32)  # (N,) may be float16
+        sh_indices_raw = data["sh_indices"]        # possibly packed
+        sh_norms_raw = data["sh_norms"]
+        if is_byte_shuffled:
+            sh_norms_raw = np.frombuffer(
+                byte_unshuffle(sh_norms_raw.flatten(), np.float16).tobytes(),
+                dtype=np.float16,
+            )
+        sh_norms = sh_norms_raw.astype(np.float32)  # (N,) may be float16
         sh_rotation = data["sh_rotation"]      # (D, D) float32
         sh_centroids = data["sh_centroids"]    # (2^b,) float32
+
+        if sh_packed:
+            # Unpack bit-packed SH indices
+            orig_shape = tuple(data["sh_indices_shape"])
+            orig_len = 1
+            for s in orig_shape:
+                orig_len *= s
+            sh_indices = unpack_indices(sh_indices_raw.flatten(), orig_len, sh_bits)
+            sh_indices = sh_indices.reshape(orig_shape)
+        else:
+            sh_indices = sh_indices_raw  # (N, D) uint8
 
         # Centroid lookup: map each index to its centroid value
         y_hat = sh_centroids[sh_indices]  # (N, D) float32
@@ -76,13 +126,34 @@ def decompress_gaussians(compressed_path: str) -> dict:
     else:
         sh_rest = sh_rest_truncated
 
+    # Check if uniform-quantized indices are delta-coded (zstd format)
+    is_delta = bool(_scalar("delta_coded", 0))
+
     # --- Uniform dequantize other attributes ---
     def _dequant(name):
-        idx = data[f"{name}_idx"]
-        vmin = float(data[f"{name}_vmin"])
-        scale = float(data[f"{name}_scale"])
-        bits = int(data[f"{name}_bits"])
+        idx_raw = data[f"{name}_idx"]
         shape = tuple(data[f"{name}_shape"])
+        bits = int(_scalar(f"{name}_bits"))
+
+        if is_byte_shuffled:
+            # Recover original dtype from stored string
+            dtype_key = f"{name}_idx_dtype"
+            if dtype_key in data:
+                orig_dtype = bytes(data[dtype_key].tolist()).decode("utf-8")
+            else:
+                orig_dtype = "uint16"
+            idx = np.frombuffer(
+                byte_unshuffle(idx_raw.flatten(), np.dtype(orig_dtype)).tobytes(),
+                dtype=np.dtype(orig_dtype),
+            ).reshape(shape)
+        else:
+            idx = idx_raw
+
+        if is_delta and name == "pos":
+            idx = delta_decode(idx, target_dtype=np.uint16)
+
+        vmin = float(_scalar(f"{name}_vmin"))
+        scale = float(_scalar(f"{name}_scale"))
         recon = _uniform_dequantize(idx, vmin, scale, bits)
         return recon.reshape(shape)
 
