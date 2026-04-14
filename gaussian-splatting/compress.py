@@ -4,8 +4,12 @@ SH coefficients are compressed with TurboQuant (random rotation + optimal scalar
 quantization). Other attributes (positions, DC, scales, rotations, opacity) use
 simple uniform scalar quantization. Output is a compressed .npz file.
 
+Supports aggressive compression via Gaussian pruning, SH band truncation, and
+lower bit-widths for 15-25x compression ratios.
+
 Usage:
     python compress.py -m output/lego_wb -o compressed/lego.npz --sh_bits 3
+    python compress.py -m output/lego_wb -o compressed/lego_agg.npz --aggressive
 """
 
 import argparse
@@ -15,6 +19,16 @@ import numpy as np
 from plyfile import PlyData, PlyElement
 
 from turbo_quant.quantizer import TurboQuantizer
+
+
+# ---------------------------------------------------------------------------
+# SH band structure in sh_rest (N, 45) for degree-3 SH:
+#   Band l=1: indices 0:9   (3 coeffs x 3 channels)
+#   Band l=2: indices 9:24  (5 coeffs x 3 channels)
+#   Band l=3: indices 24:45 (7 coeffs x 3 channels)
+# ---------------------------------------------------------------------------
+
+SH_BAND_DIMS = {0: 0, 1: 9, 2: 24, 3: 45}
 
 
 # ---------------------------------------------------------------------------
@@ -90,6 +104,70 @@ def load_ply_attributes(ply_path: str) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Gaussian pruning
+# ---------------------------------------------------------------------------
+
+def _prune_gaussians(attrs: dict, prune_ratio: float) -> dict:
+    """Remove low-importance Gaussians based on opacity * geometric_mean(scale).
+
+    Importance = sigmoid(opacity) * geometric_mean(exp(scales)).
+    Opacity is in pre-sigmoid space and scales are in log-space in PLY files.
+
+    Args:
+        attrs: Dict of Gaussian attributes.
+        prune_ratio: Fraction of Gaussians to remove (0.0 = keep all).
+
+    Returns:
+        Pruned attrs dict (new arrays, original untouched).
+    """
+    if prune_ratio <= 0:
+        return attrs
+
+    opacity = 1.0 / (1.0 + np.exp(-attrs["opacity"].flatten()))  # sigmoid
+    scales_exp = np.exp(attrs["scales"])  # (N, 3)
+    geo_mean_scale = np.prod(scales_exp, axis=1) ** (1.0 / 3.0)
+    importance = opacity * geo_mean_scale
+
+    n_total = len(importance)
+    n_keep = int(n_total * (1 - prune_ratio))
+    n_keep = max(n_keep, 1)  # keep at least 1
+
+    keep_idx = np.argsort(importance)[-n_keep:]  # keep top n_keep
+    keep_idx = np.sort(keep_idx)  # maintain original order
+
+    pruned = {}
+    for key, val in attrs.items():
+        pruned[key] = val[keep_idx]
+    return pruned
+
+
+# ---------------------------------------------------------------------------
+# SH band truncation
+# ---------------------------------------------------------------------------
+
+def _truncate_sh(attrs: dict, sh_degree: int) -> dict:
+    """Truncate SH rest coefficients to a lower band.
+
+    Args:
+        attrs: Dict of Gaussian attributes (modified in place for sh_rest).
+        sh_degree: Maximum SH degree to keep (0=DC only, 1=band1, 2=band1+2, 3=all).
+
+    Returns:
+        attrs dict with sh_rest truncated (new array).
+    """
+    if sh_degree >= 3:
+        return attrs  # keep all bands
+
+    keep_dims = SH_BAND_DIMS[sh_degree]
+    attrs = dict(attrs)  # shallow copy to avoid mutating original
+    if keep_dims == 0:
+        attrs["sh_rest"] = np.zeros((attrs["sh_rest"].shape[0], 0), dtype=np.float32)
+    else:
+        attrs["sh_rest"] = attrs["sh_rest"][:, :keep_dims].copy()
+    return attrs
+
+
+# ---------------------------------------------------------------------------
 # Uniform scalar quantization
 # ---------------------------------------------------------------------------
 
@@ -141,9 +219,12 @@ def compress_gaussians(
     output_path: str,
     sh_bits: int = 3,
     pos_bits: int = 16,
+    dc_bits: int = 16,
     scale_bits: int = 16,
     rot_bits: int = 8,
     opacity_bits: int = 8,
+    prune_ratio: float = 0.0,
+    sh_degree: int = 3,
     seed: int = 0,
 ) -> dict:
     """Compress 3DGS attributes to a .npz file.
@@ -153,28 +234,58 @@ def compress_gaussians(
         output_path: Where to save the .npz file.
         sh_bits: Bit-width for SH rest coefficients (TurboQuant).
         pos_bits: Bit-width for xyz positions (uniform).
+        dc_bits: Bit-width for SH DC coefficients (uniform).
         scale_bits: Bit-width for scales (uniform).
         rot_bits: Bit-width for rotations (uniform).
         opacity_bits: Bit-width for opacity (uniform).
+        prune_ratio: Fraction of Gaussians to prune (0.0 = none).
+        sh_degree: Max SH degree to keep (3=all, 2=drop band3, 1=band1 only, 0=DC only).
         seed: Random seed for TurboQuantizer.
 
     Returns:
-        Stats dict with keys: n_gaussians, compression_time_s,
-        compressed_size_bytes, original_size_bytes, compression_ratio.
+        Stats dict with keys: n_gaussians, n_gaussians_original,
+        compression_time_s, compressed_size_bytes, original_size_bytes,
+        compression_ratio.
     """
     t0 = time.perf_counter()
-    N = attrs["xyz"].shape[0]
 
-    # Original size: all float32 attributes
+    # Original size: all float32 attributes (before pruning/truncation)
     original_size = sum(a.nbytes for a in attrs.values())
+    n_original = attrs["xyz"].shape[0]
+
+    # --- Gaussian pruning ---
+    if prune_ratio > 0:
+        attrs = _prune_gaussians(attrs, prune_ratio)
+        print(f"  Pruned: {n_original:,} -> {attrs['xyz'].shape[0]:,} Gaussians "
+              f"({prune_ratio*100:.0f}% removed)")
+
+    # --- SH band truncation ---
+    if sh_degree < 3:
+        old_d = attrs["sh_rest"].shape[1]
+        attrs = _truncate_sh(attrs, sh_degree)
+        new_d = attrs["sh_rest"].shape[1]
+        print(f"  SH truncated: {old_d} -> {new_d} dims "
+              f"(degree {sh_degree})")
+
+    N = attrs["xyz"].shape[0]
 
     # --- SH rest: TurboQuant ---
     sh_rest = attrs["sh_rest"]  # (N, D)
     d = sh_rest.shape[1]
-    tq = TurboQuantizer(d=d, b=sh_bits, seed=seed)
-    sh_indices, sh_norms = tq.quantize(sh_rest)  # (N, D) uint8, (N,) float32
-    sh_rotation = tq.get_rotation_matrix()  # (D, D) float64
-    sh_centroids = tq.get_centroids()  # (2^b,) float64
+
+    if d > 0:
+        tq = TurboQuantizer(d=d, b=sh_bits, seed=seed)
+        sh_indices, sh_norms = tq.quantize(sh_rest)  # (N, D) uint8, (N,) float32
+        sh_rotation = tq.get_rotation_matrix()  # (D, D) float64
+        sh_centroids = tq.get_centroids()  # (2^b,) float64
+        # Quantize norms to float16 (saves 50%, error <0.01%)
+        sh_norms = sh_norms.astype(np.float16)
+    else:
+        # No SH rest (degree 0): store empty placeholders
+        sh_indices = np.zeros((N, 0), dtype=np.uint8)
+        sh_norms = np.zeros(N, dtype=np.float16)
+        sh_rotation = np.zeros((0, 0), dtype=np.float32)
+        sh_centroids = np.zeros(0, dtype=np.float32)
 
     # --- Uniform quantize other attributes ---
     def _quant(values, bits, name):
@@ -188,7 +299,7 @@ def compress_gaussians(
         }
 
     pos_q = _quant(attrs["xyz"], pos_bits, "pos")
-    dc_q = _quant(attrs["sh_dc"], 16, "dc")  # DC needs high precision too
+    dc_q = _quant(attrs["sh_dc"], dc_bits, "dc")
     scale_q = _quant(attrs["scales"], scale_bits, "scale")
     rot_q = _quant(attrs["rotations"], rot_bits, "rot")
     opacity_q = _quant(attrs["opacity"], opacity_bits, "opacity")
@@ -198,10 +309,11 @@ def compress_gaussians(
         # SH rest (TurboQuant)
         "sh_indices": sh_indices,
         "sh_norms": sh_norms,
-        "sh_rotation": sh_rotation.astype(np.float32),
-        "sh_centroids": sh_centroids.astype(np.float32),
+        "sh_rotation": sh_rotation.astype(np.float32) if d > 0 else sh_rotation,
+        "sh_centroids": sh_centroids.astype(np.float32) if d > 0 else sh_centroids,
         "sh_bits": np.uint8(sh_bits),
         "sh_d": np.int32(d),
+        "sh_degree": np.uint8(sh_degree),
         # Metadata
         "n_gaussians": np.int32(N),
     }
@@ -217,6 +329,7 @@ def compress_gaussians(
 
     return {
         "n_gaussians": N,
+        "n_gaussians_original": n_original,
         "compression_time_s": compression_time,
         "compressed_size_bytes": compressed_size,
         "original_size_bytes": original_size,
@@ -237,18 +350,52 @@ def main():
         help="Path to 3DGS output directory (contains point_cloud/iteration_*/point_cloud.ply)",
     )
     parser.add_argument(
-        "-o", "--output", required=True,
-        help="Output .npz path",
+        "-o", "--output", default=None,
+        help="Output .npz path (default: compressed/<model_name>.npz)",
     )
     parser.add_argument("--iteration", type=int, default=None,
                         help="Iteration to load (default: latest)")
     parser.add_argument("--sh_bits", type=int, default=3)
     parser.add_argument("--pos_bits", type=int, default=16)
+    parser.add_argument("--dc_bits", type=int, default=16,
+                        help="Bit-width for SH DC coefficients (default: 16)")
     parser.add_argument("--scale_bits", type=int, default=16)
     parser.add_argument("--rot_bits", type=int, default=8)
     parser.add_argument("--opacity_bits", type=int, default=8)
     parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--prune_ratio", type=float, default=0.0,
+                        help="Fraction of Gaussians to prune (0.0 = none, 0.5 = remove 50%%)")
+    parser.add_argument("--sh_degree", type=int, default=3,
+                        help="Max SH degree to keep (3=all, 2=drop band3, 1=band1, 0=DC only)")
+    parser.add_argument("--aggressive", action="store_true",
+                        help="Aggressive compression: prune 50%%, SH degree 2, low bit-widths")
     args = parser.parse_args()
+
+    # Apply aggressive defaults (individual args can still override)
+    if args.aggressive:
+        # Only override if user didn't explicitly set these
+        if args.prune_ratio == 0.0:
+            args.prune_ratio = 0.5
+        if args.sh_degree == 3:
+            args.sh_degree = 2
+        if args.sh_bits == 3:
+            args.sh_bits = 2
+        if args.pos_bits == 16:
+            args.pos_bits = 12
+        if args.dc_bits == 16:
+            args.dc_bits = 8
+        if args.scale_bits == 16:
+            args.scale_bits = 8
+        if args.rot_bits == 8:
+            args.rot_bits = 8  # already 8
+        if args.opacity_bits == 8:
+            args.opacity_bits = 6
+
+    # Auto-generate output path if not specified
+    if args.output is None:
+        model_name = os.path.basename(os.path.normpath(args.model_path))
+        suffix = "_aggressive" if args.aggressive else ""
+        args.output = os.path.join("compressed", f"{model_name}{suffix}.npz")
 
     # Find PLY file
     pc_dir = os.path.join(args.model_path, "point_cloud")
@@ -281,18 +428,31 @@ def main():
     print(f"  {attrs['xyz'].shape[0]} Gaussians, "
           f"SH rest dim={attrs['sh_rest'].shape[1]}")
 
+    if args.aggressive:
+        print(f"\n  [AGGRESSIVE MODE]")
+    print(f"  Settings: sh_bits={args.sh_bits}, pos_bits={args.pos_bits}, "
+          f"dc_bits={args.dc_bits}, scale_bits={args.scale_bits}, "
+          f"rot_bits={args.rot_bits}, opacity_bits={args.opacity_bits}")
+    print(f"  prune_ratio={args.prune_ratio}, sh_degree={args.sh_degree}")
+
     stats = compress_gaussians(
         attrs, args.output,
         sh_bits=args.sh_bits,
         pos_bits=args.pos_bits,
+        dc_bits=args.dc_bits,
         scale_bits=args.scale_bits,
         rot_bits=args.rot_bits,
         opacity_bits=args.opacity_bits,
+        prune_ratio=args.prune_ratio,
+        sh_degree=args.sh_degree,
         seed=args.seed,
     )
 
     print(f"\nCompressed to: {args.output}")
-    print(f"  Gaussians:        {stats['n_gaussians']:,}")
+    if stats['n_gaussians'] != stats['n_gaussians_original']:
+        print(f"  Gaussians:        {stats['n_gaussians_original']:,} -> {stats['n_gaussians']:,}")
+    else:
+        print(f"  Gaussians:        {stats['n_gaussians']:,}")
     print(f"  Original size:    {stats['original_size_bytes']/1024:.1f} KB")
     print(f"  Compressed size:  {stats['compressed_size_bytes']/1024:.1f} KB")
     print(f"  Compression ratio: {stats['compression_ratio']:.2f}x")

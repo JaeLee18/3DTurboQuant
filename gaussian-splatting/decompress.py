@@ -4,6 +4,8 @@ Reads .npz files produced by compress.py and reconstructs all Gaussian
 attributes. Can optionally save the result to a PLY file compatible with the
 standard 3DGS renderer.
 
+Handles both v1 (full SH) and v2 (pruned/truncated SH) compressed files.
+
 Usage:
     python decompress.py -i compressed/lego.npz -o decompressed/lego.ply
 """
@@ -13,7 +15,7 @@ import os
 import numpy as np
 from plyfile import PlyData, PlyElement
 
-from compress import _uniform_dequantize
+from compress import _uniform_dequantize, SH_BAND_DIMS
 
 
 # ---------------------------------------------------------------------------
@@ -27,32 +29,52 @@ def decompress_gaussians(compressed_path: str) -> dict:
     TurboQuantizer needed at decompression time). Other attributes are
     reconstructed via uniform dequantization.
 
+    Handles truncated SH: if sh_degree < 3, sh_rest will have fewer
+    dimensions. The remaining (dropped) bands are zero-padded to restore
+    the full 45-dim sh_rest for renderer compatibility.
+
     Args:
         compressed_path: Path to the .npz file.
 
     Returns:
-        Dict with keys: xyz (N,3), sh_dc (N,3), sh_rest (N,D),
+        Dict with keys: xyz (N,3), sh_dc (N,3), sh_rest (N,45),
         opacity (N,1), scales (N,3), rotations (N,4).
     """
     data = np.load(compressed_path)
 
     N = int(data["n_gaussians"])
+    d = int(data["sh_d"])
+
+    # Read sh_degree if present (v2), default to 3 (v1 files)
+    sh_degree = int(data["sh_degree"]) if "sh_degree" in data else 3
 
     # --- SH rest: TurboQuant inverse ---
-    sh_indices = data["sh_indices"]        # (N, D) uint8
-    sh_norms = data["sh_norms"]            # (N,) float32
-    sh_rotation = data["sh_rotation"]      # (D, D) float32
-    sh_centroids = data["sh_centroids"]    # (2^b,) float32
+    if d > 0:
+        sh_indices = data["sh_indices"]        # (N, D) uint8
+        sh_norms = data["sh_norms"].astype(np.float32)  # (N,) may be float16
+        sh_rotation = data["sh_rotation"]      # (D, D) float32
+        sh_centroids = data["sh_centroids"]    # (2^b,) float32
 
-    # Centroid lookup: map each index to its centroid value
-    y_hat = sh_centroids[sh_indices]  # (N, D) float32
+        # Centroid lookup: map each index to its centroid value
+        y_hat = sh_centroids[sh_indices]  # (N, D) float32
 
-    # Inverse rotation: x_hat = Y_hat @ R  (R is orthogonal, so R^{-1} = R^T,
-    # but we stored R directly, and the forward pass was X @ R^T, so inverse is Y @ R)
-    x_hat = y_hat @ sh_rotation  # (N, D)
+        # Inverse rotation: x_hat = Y_hat @ R  (R is orthogonal, so R^{-1} = R^T,
+        # but we stored R directly, and the forward pass was X @ R^T, so inverse is Y @ R)
+        x_hat = y_hat @ sh_rotation  # (N, D)
 
-    # Rescale by norms
-    sh_rest = (x_hat * sh_norms[:, np.newaxis]).astype(np.float32)
+        # Rescale by norms
+        sh_rest_truncated = (x_hat * sh_norms[:, np.newaxis]).astype(np.float32)
+    else:
+        sh_rest_truncated = np.zeros((N, 0), dtype=np.float32)
+
+    # Zero-pad to full 45-dim sh_rest if truncated
+    full_sh_dim = SH_BAND_DIMS[3]  # 45
+    if d < full_sh_dim:
+        sh_rest = np.zeros((N, full_sh_dim), dtype=np.float32)
+        if d > 0:
+            sh_rest[:, :d] = sh_rest_truncated
+    else:
+        sh_rest = sh_rest_truncated
 
     # --- Uniform dequantize other attributes ---
     def _dequant(name):
