@@ -1,0 +1,12 @@
+gaussian-splatting/data/
+gaussian-splatting/output/
+gaussian-splatting/submodules/
+gaussian-splatting/SIBR_viewers/
+gaussian-splatting/results/
+gaussian-splatting/compressed/
+gaussian-splatting/training_log.txt
+gaussian-splatting/training_pid.txt
+*.pyc
+__pycache__/
+*.egg-info/
+*.npz
