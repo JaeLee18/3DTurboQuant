@@ -1,0 +1,4615 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.2.24)  15 APR 2026 09:27
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main
+(./main.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> (./acmart.cls
+Document Class: acmart 2025/08/27 v2.16 Typesetting articles for the Associatio
+n for Computing Machinery
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count185
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count186
+\decimalpart=\count187
+)
+Package: xstring 2021/07/21 v1.84 String manipulations (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+Package acmart Info: Not using screen mode on input line 77.
+Package acmart Info: Using breaking urls on hyphens on input line 85.
+Package acmart Info: Requiring acmthm on input line 93.
+Package acmart Info: Not using review mode on input line 102.
+Package acmart Info: Not using authorversion mode on input line 110.
+Package acmart Info: Not using nonacm mode on input line 122.
+Package acmart Info: Explicitly selecting natbib mode on input line 138.
+Package acmart Info: Not using anonymous mode on input line 146.
+Package acmart Info: Not using timestamp mode on input line 154.
+Package acmart Info: Not using authordraft mode on input line 164.
+Package acmart Info: Using review mode on input line 179.
+Class acmart Info: Using format sigconf, number 4 on input line 179.
+Class acmart Info: Using fontsize 9pt on input line 281.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsart.cls
+Document Class: amsart 2020/05/29 v2.20.6
+\linespacing=\dimen138
+\normalparindent=\dimen139
+\normaltopskip=\skip47
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip48
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen140
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen141
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count188
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count189
+\leftroot@=\count190
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count191
+\DOTSCASE@=\count192
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen142
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count193
+\c@MaxMatrixCols=\count194
+\dotsspace@=\muskip16
+\c@parentequation=\count195
+\dspbrk@lvl=\count196
+\tag@help=\toks19
+\row@=\count197
+\column@=\count198
+\maxfields@=\count199
+\andhelp@=\toks20
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks21
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 397
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+\copyins=\insert252
+\abstractbox=\box52
+\listisep=\skip51
+\c@part=\count266
+\c@section=\count267
+\c@subsection=\count268
+\c@subsubsection=\count269
+\c@paragraph=\count270
+\c@subparagraph=\count271
+\c@figure=\count272
+\c@table=\count273
+\abovecaptionskip=\skip52
+\belowcaptionskip=\skip53
+\captionindent=\dimen149
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks28
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2021/12/10 v3.0b Micro-typographical refinements (RS)
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count274
+)
+\MT@toks=\toks29
+\MT@count=\count275
+\MT@tempbox=\box53
+LaTeX Info: Redefining \leftprotrusion on input line 1010.
+LaTeX Info: Redefining \rightprotrusion on input line 1018.
+LaTeX Info: Redefining \textls on input line 1173.
+\MT@outer@kern=\dimen150
+LaTeX Info: Redefining \textmicrotypecontext on input line 1759.
+\MT@listname@count=\count276
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2021/12/10 v3.0b Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 897.
+LaTeX Info: Redefining \lslig on input line 897.
+\MT@outer@space=\skip57
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2021/12/10 v3.0b microtype main configuration file (RS)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen151
+\lightrulewidth=\dimen152
+\cmidrulewidth=\dimen153
+\belowrulesep=\dimen154
+\belowbottomsep=\dimen155
+\aboverulesep=\dimen156
+\abovetopsep=\dimen157
+\cmidrulesep=\dimen158
+\cmidrulekern=\dimen159
+\defaultaddspace=\dimen160
+\@cmidla=\count277
+\@cmidlb=\count278
+\@aboverulesep=\dimen161
+\@belowrulesep=\dimen162
+\@thisruleclass=\count279
+\@lastruleclass=\count280
+\@thisrulewidth=\dimen163
+)
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/totpages/totpages.sty
+Package: totpages 2005/09/19 v2.00 Totpages Package (muewi)
+
+(/usr/share/texlive/texmf-dist/tex/latex/everyshi/everyshi.sty
+Package: everyshi 2020/11/18 v4.00 EveryShipout Package
+))
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\@ACM@acmcp@delta=\dimen164
+
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip58
+\bibsep=\skip59
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count281
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen165
+\Hy@linkcounter=\count282
+\Hy@pagecounter=\count283
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count284
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4073
+.
+Package hyperref Info: Option `unicode' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count285
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen166
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count286
+\Field@Width=\dimen167
+\Fld@charsize=\dimen168
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count287
+\c@Item=\count288
+\c@Hfootnote=\count289
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count290
+\c@bookmark@seq@number=\count291
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip60
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperxmp/hyperxmp.sty
+Package: hyperxmp 2020/11/22 v5.9 Store hyperref metadata in XMP format
+\hyxmp@aep@toks=\toks30
+
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/ifdraft.sty
+Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen169
+\Gin@req@width=\dimen170
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count292
+\Gm@cntv=\count293
+\c@Gm@tempcnt=\count294
+\Gm@bindingoffset=\dimen171
+\Gm@wd@mp=\dimen172
+\Gm@odd@mp=\dimen173
+\Gm@even@mp=\dimen174
+\Gm@layoutwidth=\dimen175
+\Gm@layoutheight=\dimen176
+\Gm@layouthoffset=\dimen177
+\Gm@layoutvoffset=\dimen178
+\Gm@dimlist=\toks31
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ncctools/manyfoot.sty
+Package: manyfoot 2019/08/03 v1.11 Many Footnote Levels Package (NCC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/ncctools/nccfoots.sty
+Package: nccfoots 2005/02/03 v1.2 NCC Footnotes Package (NCC)
+)
+\MFL@columnwidth=\dimen179
+)
+\footinsauthorsaddresses=\insert251
+\c@footnoteauthorsaddresses=\count295
+\footinscopyrightpermission=\insert250
+\c@footnotecopyrightpermission=\count296
+
+(/usr/share/texlive/texmf-dist/tex/generic/pdftex/glyphtounicode.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/cmap/cmap.sty
+Package: cmap 2021/02/06 v1.0j CMap support: searchable PDF
+)
+
+Class acmart Warning: You do not have the inconsolata (zi4.sty) package install
+ed. Please upgrade your TeX on input line 857.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen180
+\captionmargin@=\dimen181
+\captionwidth=\dimen182
+\caption@tempdima=\dimen183
+\caption@indent=\dimen184
+\caption@parindent=\dimen185
+\caption@hangindent=\dimen186
+Package caption Info: AMS or SMF document class detected.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption-ams-smf.sto
+File: caption-ams-smf.sto 2020/08/22 v2.0 Adaption of the caption package to th
+e AMS and SMF document classes (AR)
+))
+\c@caption@flags=\count297
+\c@continuedfloat=\count298
+Package caption Info: hyperref package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count299
+\float@exts=\toks32
+\float@box=\box54
+\@float@everytoks=\toks33
+\@floatcapt=\box55
+)
+\@float@every@sidebar=\toks34
+\c@sidebar=\count300
+\fulltextwidth=\dimen187
+\@ACM@labelwidth=\dimen188
+\listisep=\skip61
+\num@authorgroups=\count301
+\num@authors=\count302
+\@ACM@badge@width=\skip62
+\@ACM@title@width=\skip63
+\@ACM@badge@skip=\skip64
+Class acmart Info: Printing CCS on input line 1848.
+Class acmart Info: Printing bibformat on input line 1848.
+Class acmart Info: Suppressing folios on input line 1855.
+Class acmart Info: Setting authorsperrow to 0 on input line 1858.
+
+(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment') Excluding comment 'CCSXML'
+\c@@concepts=\count303
+\mktitle@bx=\box56
+\@ACM@acmcpbox=\box57
+\@ACM@commabox=\box58
+\author@bx=\box59
+\author@bx@wd=\dimen189
+\author@bx@sep=\skip65
+
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip66
+\f@nch@O@elh=\skip67
+\f@nch@O@erh=\skip68
+\f@nch@O@olh=\skip69
+\f@nch@O@orh=\skip70
+\f@nch@O@elf=\skip71
+\f@nch@O@erf=\skip72
+\f@nch@O@olf=\skip73
+\f@nch@O@orf=\skip74
+)
+\ACM@linecount@bx=\box60
+\ACM@linecount@bxht=\skip75
+\ACM@linecount=\count304
+
+Special comment 'acks'){/home/jj/.texlive2021/texmf-var/fonts/map/pdftex/updmap
+/pdftex.map}{/home/jj/texmf/fonts/map/libertine.map
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-tlf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-tlf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-tlf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-tlf-sc-ot1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-tlf-sc-t1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-tlf-sc-ly1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-tlf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-sup-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-sup-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-sup-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-lf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-lf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-lf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-lf-sc-ot1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-lf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-lf-sc-ly1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-lf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-tosf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-tosf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-tosf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-tosf-sc-ot1--base' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-tosf-sc-t1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-tosf-sc-ly1--base' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-tosf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-osf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-osf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-osf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-osf-sc-ot1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-osf-sc-t1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-osf-sc-ly1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTBI-osf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-tlf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-tlf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-tlf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-tlf-sc-ot1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-tlf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-tlf-sc-ly1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-tlf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-sup-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-sup-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-sup-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-lf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-lf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-lf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-lf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-lf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-lf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-lf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-tosf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-tosf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-tosf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-tosf-sc-ot1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-tosf-sc-t1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-tosf-sc-ly1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-tosf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-osf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-osf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-osf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-osf-sc-ot1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-osf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-osf-sc-ly1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTB-osf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-tlf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-tlf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-tlf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-tlf-sc-ot1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-tlf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-tlf-sc-ly1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-tlf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-sup-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-sup-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-sup-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-lf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-lf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-lf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-lf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-lf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-lf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-lf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-tosf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-tosf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-tosf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-tosf-sc-ot1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-tosf-sc-t1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-tosf-sc-ly1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-tosf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-osf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-osf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-osf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-osf-sc-ot1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-osf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-osf-sc-ly1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTI-osf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-tlf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-tlf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-tlf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-tlf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-tlf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-tlf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-tlf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-sup-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-sup-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-sup-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-lf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-lf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-lf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-lf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-lf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-lf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-lf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-tosf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-tosf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-tosf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-tosf-sc-ot1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-tosf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-tosf-sc-ly1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-tosf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-osf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-osf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-osf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-osf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-osf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-osf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineT-osf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-tlf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-tlf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-tlf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-tlf-sc-ot1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-tlf-sc-t1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-tlf-sc-ly1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-tlf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-sup-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-sup-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-sup-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-lf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-lf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-lf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-lf-sc-ot1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-lf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-lf-sc-ly1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-lf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-tosf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-tosf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-tosf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-tosf-sc-ot1--base' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-tosf-sc-t1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-tosf-sc-ly1--base' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-tosf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-osf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-osf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-osf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-osf-sc-ot1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-osf-sc-t1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-osf-sc-ly1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZI-osf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-tlf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-tlf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-tlf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-tlf-sc-ot1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-tlf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-tlf-sc-ly1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-tlf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-sup-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-sup-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-sup-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-lf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-lf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-lf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-lf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-lf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-lf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-lf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-tosf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-tosf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-tosf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-tosf-sc-ot1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-tosf-sc-t1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-tosf-sc-ly1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-tosf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-osf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-osf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-osf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-osf-sc-ot1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-osf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-osf-sc-ly1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineTZ-osf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-tlf-ot1--base' already exists, duplicates igno
+red
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-tlf-t1--base' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-tlf-ly1--base' already exists, duplicates igno
+red
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-tlf-ts1--base' already exists, duplicates igno
+red
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-sup-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-sup-t1--base' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-sup-ly1--base' already exists, duplicates igno
+red
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-lf-ot1--base' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-lf-t1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-lf-ly1--base' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-lf-ts1--base' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-tosf-ot1--base' already exists, duplicates ign
+ored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-tosf-t1--base' already exists, duplicates igno
+red
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-tosf-ly1--base' already exists, duplicates ign
+ored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-tosf-ts1--base' already exists, duplicates ign
+ored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-osf-ot1--base' already exists, duplicates igno
+red
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-osf-t1--base' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-osf-ly1--base' already exists, duplicates igno
+red
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineDisplayT-osf-ts1--base' already exists, duplicates igno
+red
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineIT-tlf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineIT-tlf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineIT-tlf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineIT-tlf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineIT-lf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineIT-lf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineIT-lf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineIT-lf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTBO-tlf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTBO-tlf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTBO-tlf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTBO-tlf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTBO-sup-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTBO-sup-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTBO-sup-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTBO-lf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTBO-lf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTBO-lf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTBO-lf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTB-tlf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTB-tlf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTB-tlf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTB-tlf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTB-sup-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTB-sup-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTB-sup-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTB-lf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTB-lf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTB-lf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTB-lf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTO-tlf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTO-tlf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTO-tlf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTO-tlf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTO-sup-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTO-sup-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTO-sup-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTO-lf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTO-lf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTO-lf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMTO-lf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMT-tlf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMT-tlf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMT-tlf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMT-tlf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMT-sup-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMT-sup-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMT-sup-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMT-lf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMT-lf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMT-lf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinLibertineMT-lf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-tlf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-tlf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-tlf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-tlf-sc-ot1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-tlf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-tlf-sc-ly1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-tlf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-sup-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-sup-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-sup-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-lf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-lf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-lf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-lf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-lf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-lf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-lf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-tosf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-tosf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-tosf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-tosf-sc-ot1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-tosf-sc-t1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-tosf-sc-ly1--base' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-tosf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-osf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-osf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-osf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-osf-sc-ot1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-osf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-osf-sc-ly1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTBO-osf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-tlf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-tlf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-tlf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-tlf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-tlf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-tlf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-tlf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-sup-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-sup-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-sup-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-lf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-lf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-lf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-lf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-lf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-lf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-lf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-tosf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-tosf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-tosf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-tosf-sc-ot1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-tosf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-tosf-sc-ly1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-tosf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-osf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-osf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-osf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-osf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-osf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-osf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTB-osf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-tlf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-tlf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-tlf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-tlf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-tlf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-tlf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-tlf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-sup-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-sup-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-sup-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-lf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-lf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-lf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-lf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-lf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-lf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-lf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-tosf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-tosf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-tosf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-tosf-sc-ot1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-tosf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-tosf-sc-ly1--base' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-tosf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-osf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-osf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-osf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-osf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-osf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-osf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumTI-osf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-tlf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-tlf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-tlf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-tlf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-tlf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-tlf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-tlf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-sup-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-sup-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-sup-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-lf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-lf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-lf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-lf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-lf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-lf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-lf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-tosf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-tosf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-tosf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-tosf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-tosf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-tosf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-tosf-ts1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-osf-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-osf-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-osf-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-osf-sc-ot1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-osf-sc-t1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-osf-sc-ly1--base' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/libertine.map): fontmap
+ entry for `LinBiolinumT-osf-ts1--base' already exists, duplicates ignored
+}{/home/jj/texmf/fonts/map/newtx.map
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `zxlz-caps' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `zxlr-caps' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `Libertine-nu' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineI-nu' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineZ-nu' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineZI-nu' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineZI-7nu' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineZI-5nu' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineI-5nu' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineI-7nu' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `zxlzi-8r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `zxlri-8r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `zxlz-8r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `zxlr-8r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `zxlr-7nums' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `zxlr-5nums' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rfxlzi-vw5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rfxlzi-vw7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rfxlzi-vw' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rfxlri-vw' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rfxlri-vw7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rfxlri-vw5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineTheta-Regular' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxexmods' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxbexmods' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxexb' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxbexb' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsym' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxbsym' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rtxmio' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rtxbmio' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rfxlri-alt' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rfxlzi-alt' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `fxlri-7alt' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `fxlzi-7alt' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `fxlri-5alt' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `fxlzi-5alt' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rfxlr-alt' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rfxlz-alt' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `fxlri-7letters' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `fxlri-5letters' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `fxlzi-5letters' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `fxlzi-7letters' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `fxlzi-jv' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `fxlzi-jv7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `fxlzi-jv5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txexs' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txbexs' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txexas' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txbexas' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txsys' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txbsys' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txsy7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txbsy7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txsy5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txbsy5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txsya7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txbsya7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txsyb5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txbsyb5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rtxmi7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rtxbmi7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rtxmi5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rtxbmi5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txmia7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txbmia7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txmia5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txbmia5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txmiaX' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txbmiaX' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rntxmi' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rntxmi5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rntxmi7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rntxbmi' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rntxbmi5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rntxbmi7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rtxbmi-rev' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rtxbmi7-rev' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rtxbmi5-rev' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txex-bar' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txbex-bar' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsyralt' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsybalt' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `MinLibIta-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `MinLibBolIta-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `MinLibReg-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `MinLibBol-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `MinLibIta-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `MinLibBolIta-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `MinLibReg-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `MinLibBol-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `MinLibIta-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `MinLibBolIta-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `MinLibReg-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `MinLibBol-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rtxmi-ut' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `rtxbmi-ut' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ptmrc8r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ptmbc8r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tlf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-osf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-lf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tosf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tlf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-osf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-lf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tosf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tlf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-osf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-lf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tosf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tlf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-osf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-lf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tosf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tlf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-osf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-lf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tosf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tlf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-osf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-lf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tosf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tlf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-osf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-lf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tosf-sc-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tlf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-osf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-lf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tosf-sc-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tlf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tlf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-osf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-osf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-lf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-lf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tosf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tosf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tlf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-osf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-lf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tosf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tlf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-osf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-lf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tosf-sc-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tlf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-osf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-lf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tosf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tlf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-osf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-lf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tosf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tlf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-osf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-lf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tosf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tlf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-osf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-lf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tosf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tlf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-osf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-lf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tosf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tlf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-osf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-lf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tosf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tlf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-osf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-lf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tosf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tlf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-osf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-lf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tosf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tlf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tlf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-osf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-osf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-lf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-lf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tosf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tosf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tlf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-osf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-lf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tosf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tlf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-osf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-lf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tosf-ot1r' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tlf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-osf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-lf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tosf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tlf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-osf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-lf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tosf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tlf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-osf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-lf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Bold-tosf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tlf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-osf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-lf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tosf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tlf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-osf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-lf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tosf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tlf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-osf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-lf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldItalic-tosf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldSlanted-tlf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldSlanted-osf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldSlanted-lf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldSlanted-tosf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldSlanted-tlf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldSlanted-osf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldSlanted-lf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldSlanted-tosf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldSlanted-tlf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldSlanted-osf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldSlanted-lf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-BoldSlanted-tosf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-lf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-lf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-lf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-osf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-osf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-osf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tlf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tlf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tlf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tosf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tosf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Italic-tosf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Slanted-lf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Slanted-lf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Slanted-lf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Slanted-osf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Slanted-osf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Slanted-osf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Slanted-tlf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Slanted-tlf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Slanted-tlf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Slanted-tosf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Slanted-tosf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Slanted-tosf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-lf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-lf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-lf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-osf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-osf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-osf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tlf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tlf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tlf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tosf-scl-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tosf-scl-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntx-Regular-tosf-scl-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxth-Italic-tlf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxth-Italic-osf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxth-Italic-tlf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxth-Italic-osf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxth-Italic-tlf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxth-Italic-osf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxth-Slanted-tlf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxth-Slanted-osf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxth-Slanted-tlf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxth-Slanted-osf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxth-Slanted-tlf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxth-Slanted-osf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ztmfigs-sl' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ztmfigs-bsl' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ztmbsl-tlf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ztmbsl-lf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ztmbsl-osf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ztmbsl-tosf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ztmbsl-tlf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ztmbsl-lf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ztmbsl-osf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ztmbsl-tosf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ztmbsl-tlf-texnansi' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ztmbsl-lf-texnansi' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ztmbsl-osf-texnansi' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ztmbsl-tosf-texnansi' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `NewTXMI' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `NewTXMI7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `NewTXMI5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `NewTXBMI' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `NewTXBMI7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `NewTXBMI5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txmiaSTbb' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `txbmiaSTbb' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineMathRM' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineMathBRM' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineMathBMI' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineMathMI' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineMathMI7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineMathMI5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineMathBMI5' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertineMathBMI7' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `stxscr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ebgMRM' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ebgBRM' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ebgMI' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ebgBMI' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-BoldItalic-inf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-BoldItalic-inf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-BoldItalic-inf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-BoldItalic-inf-t2a' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Bold-inf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Bold-inf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Bold-inf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Bold-inf-t2a' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Italic-inf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Italic-inf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Italic-inf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Italic-inf-t2a' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Regular-inf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Regular-inf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Regular-inf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Regular-inf-t2a' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-SemiboldItalic-inf-ot1' already exists, duplicates igno
+red
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-SemiboldItalic-inf-t1' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-SemiboldItalic-inf-ly1' already exists, duplicates igno
+red
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-SemiboldItalic-inf-t2a' already exists, duplicates igno
+red
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Semibold-inf-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Semibold-inf-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Semibold-inf-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `LibertinusSerif-Semibold-inf-t2a' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxnumr-Regular-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxnumr-Regular-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxnumr-Regular-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxdnom-Regular-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxdnom-Regular-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxdnom-Regular-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinf-Regular-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinfalt-Regular-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinf-Regular-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinfalt-Regular-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinf-Regular-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinfalt-Regular-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-Regular-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-Regular-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-Regular-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-Regular-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-Regular-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-Regular-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxnumr-Italic-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxnumr-Italic-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxnumr-Italic-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxdnom-Italic-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxdnom-Italic-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxdnom-Italic-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinf-Italic-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinfalt-Italic-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinf-Italic-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinfalt-Italic-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinf-Italic-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinfalt-Italic-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-Italic-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-Italic-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-Italic-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-Italic-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-Italic-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-Italic-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxnumr-Bold-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxnumr-Bold-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxnumr-Bold-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxdnom-Bold-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxdnom-Bold-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxdnom-Bold-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinf-Bold-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinfalt-Bold-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinf-Bold-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinfalt-Bold-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinf-Bold-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinfalt-Bold-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-Bold-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-Bold-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-Bold-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-Bold-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-Bold-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-Bold-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxnumr-BoldItalic-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxnumr-BoldItalic-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxnumr-BoldItalic-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxdnom-BoldItalic-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxdnom-BoldItalic-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxdnom-BoldItalic-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinf-BoldItalic-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinfalt-BoldItalic-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinf-BoldItalic-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinfalt-BoldItalic-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinf-BoldItalic-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxinfalt-BoldItalic-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-BoldItalic-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-BoldItalic-ot1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-BoldItalic-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-BoldItalic-t1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-BoldItalic-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-BoldItalic-ly1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-Regular-ts1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-Bold-ts1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-Italic-ts1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsups-BoldItalic-ts1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-Regular-ts1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-Bold-ts1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-Italic-ts1' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /home/jj/texmf/fonts/map/newtx.map): fontmap ent
+ry for `ntxsupsalt-BoldItalic-ts1' already exists, duplicates ignored
+} (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip76
+\multirow@cntb=\count305
+\multirow@dima=\skip77
+\bigstrutjot=\dimen190
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count306
+\c@subtable=\count307
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks35
+\pgfutil@tempdima=\dimen191
+\pgfutil@tempdimb=\dimen192
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box61
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks36
+\pgfkeys@temptoks=\toks37
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks38
+))
+\pgf@x=\dimen193
+\pgf@y=\dimen194
+\pgf@xa=\dimen195
+\pgf@ya=\dimen196
+\pgf@xb=\dimen197
+\pgf@yb=\dimen198
+\pgf@xc=\dimen199
+\pgf@yc=\dimen256
+\pgf@xd=\dimen257
+\pgf@yd=\dimen258
+\w@pgf@writea=\write4
+\r@pgf@reada=\read2
+\c@pgf@counta=\count308
+\c@pgf@countb=\count309
+\c@pgf@countc=\count310
+\c@pgf@countd=\count311
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
+\pgf@sys@id@count=\count312
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count313
+\pgfsyssoftpath@bigbuffer@items=\count314
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen259
+\pgfmath@count=\count315
+\pgfmath@box=\box62
+\pgfmath@toks=\toks42
+\pgfmath@stack@operand=\toks43
+\pgfmath@stack@operation=\toks44
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count316
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen260
+\pgf@picmaxx=\dimen261
+\pgf@picminy=\dimen262
+\pgf@picmaxy=\dimen263
+\pgf@pathminx=\dimen264
+\pgf@pathmaxx=\dimen265
+\pgf@pathminy=\dimen266
+\pgf@pathmaxy=\dimen267
+\pgf@xx=\dimen268
+\pgf@xy=\dimen269
+\pgf@yx=\dimen270
+\pgf@yy=\dimen271
+\pgf@zx=\dimen272
+\pgf@zy=\dimen273
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen274
+\pgf@path@lasty=\dimen275
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen276
+\pgf@shorten@start@additional=\dimen277
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box63
+\pgf@hbox=\box64
+\pgf@layerbox@main=\box65
+\pgf@picture@serial@count=\count317
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen278
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen279
+\pgf@pt@y=\dimen280
+\pgf@pt@temp=\dimen281
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen282
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen283
+\pgf@sys@shading@range@num=\count318
+\pgf@shadingcount=\count319
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box66
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box67
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen284
+\pgf@nodesepend=\dimen285
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen286
+\pgffor@skip=\dimen287
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count320
+\pgfplotmarksize=\dimen288
+)
+\tikz@lastx=\dimen289
+\tikz@lasty=\dimen290
+\tikz@lastxsaved=\dimen291
+\tikz@lastysaved=\dimen292
+\tikz@lastmovetox=\dimen293
+\tikz@lastmovetoy=\dimen294
+\tikzleveldistance=\dimen295
+\tikzsiblingdistance=\dimen296
+\tikz@figbox=\box68
+\tikz@figbox@bg=\box69
+\tikz@tempbox=\box70
+\tikz@tempbox@bg=\box71
+\tikztreelevel=\count321
+\tikznumberofchildren=\count322
+\tikznumberofcurrentchild=\count323
+\tikz@fig@count=\count324
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count325
+\pgfmatrixcurrentcolumn=\count326
+\pgf@matrix@numberofcolumns=\count327
+)
+\tikz@expandcount=\count328
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks47
+\t@pgfplots@tokb=\toks48
+\t@pgfplots@tokc=\toks49
+\pgfplots@tmpa=\dimen297
+\c@pgfplots@coordindex=\count329
+\c@pgfplots@scanlineindex=\count330
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex
+\c@pgfplotsarray@tmp=\count331
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex
+\c@pgfplotstable@counta=\count332
+\t@pgfplotstable@a=\toks50
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+\c@pgfplotslibrarysurf@no=\count333
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex
+\pgfdecoratedcompleteddistance=\dimen298
+\pgfdecoratedremainingdistance=\dimen299
+\pgfdecoratedinputsegmentcompleteddistance=\dimen300
+\pgfdecoratedinputsegmentremainingdistance=\dimen301
+\pgf@decorate@distancetomove=\dimen302
+\pgf@decorate@repeatstate=\count334
+\pgfdecorationsegmentamplitude=\dimen303
+\pgfdecorationsegmentlength=\dimen304
+)
+\tikz@lib@dec@box=\box72
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
+ntourlua.code.tex)
+\pgfplots@numplots=\count335
+\pgfplots@xmin@reg=\dimen305
+\pgfplots@xmax@reg=\dimen306
+\pgfplots@ymin@reg=\dimen307
+\pgfplots@ymax@reg=\dimen308
+\pgfplots@zmin@reg=\dimen309
+\pgfplots@zmax@reg=\dimen310
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex
+File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+Class acmart Info: Suppressing bibformat on input line 20.
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 31.
+
+\c@theorem=\count336
+ (/usr/share/texlive/texmf-dist/tex/latex/preprint/balance.sty
+Package: balance 1999/02/23 4.3 (PWD)
+\oldvsize=\dimen311
+)
+Excluding comment 'screenonly' Include comment 'printonly'
+Include comment 'anonsuppress'
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count337
+\l__pdf_internal_box=\box73
+)
+(./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
+LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Info: Redefining \microtypecontext on input line 31.
+Package microtype Info: Applying patch `item' on input line 31.
+Package microtype Info: Applying patch `toc' on input line 31.
+Package microtype Info: Applying patch `eqnum' on input line 31.
+Package microtype Info: Applying patch `footnote' on input line 31.
+Package microtype Info: Generating PDF output.
+Package microtype Info: No character protrusion.
+Package microtype Info: No font expansion.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+Package hyperref Info: Link coloring OFF on input line 31.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count338
+)
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
+
+(./main.out) (./main.out)
+\@outlinefile=\write5
+\openout5 = `main.out'.
+
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count339
+\scratchdimen=\dimen312
+\scratchbox=\box74
+\nofMPsegments=\count340
+\nofMParguments=\count341
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count342
+\MPscratchDim=\dimen313
+\MPnumerator=\count343
+\makeMPintoPDFobject=\count344
+\everyMPtoPDFconversion=\toks52
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot twoside heightrounded 
+* h-part:(L,W,R)=(54.0pt, 506.295pt, 54.0pt)
+* v-part:(T,H,B)=(57.0pt, 664.96999pt, 73.0pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=506.295pt
+* \textheight=626.0pt
+* \oddsidemargin=-18.26999pt
+* \evensidemargin=-18.26999pt
+* \topmargin=-15.26999pt
+* \headheight=13.0pt
+* \headsep=14.0pt
+* \topskip=10.0pt
+* \footskip=12.0pt
+* \marginparwidth=24.0pt
+* \marginparsep=11.0pt
+* \columnsep=24.0pt
+* \skip\footins=7.0pt plus 11.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+Excluding 'CCSXML' comment.
+
+Class acmart Warning: No city present for an affiliation.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 70.
+
+
+Overfull \hbox (1.53177pt too wide) in paragraph at lines 78--86
+\OT1/cmr/m/n/9 co-vari-ance via log-scale (3) and ro-ta-tion quater-nion (4), o
+pac-
+ []
+
+
+Underfull \vbox (badness 5771) has occurred while \output is active []
+
+
+Overfull \hbox (2.94252pt too wide) in paragraph at lines 95--100
+\OT1/cmr/m/n/9 of the Shan-non rate-distortion limit [[]]---to com-press traine
+d
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1.1
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2.2]
+Overfull \hbox (1.40228pt too wide) in paragraph at lines 210--213
+\OT1/cmr/m/n/9 59%$---\OT1/cmr/bx/n/9 roughly 60% of SH band $\OML/cmm/m/it/9 `
+[]\OT1/cmr/m/n/9 3$ \OT1/cmr/bx/n/9 is over-fit-ting noise\OT1/cmr/m/n/9 .
+ []
+
+
+Overfull \hbox (3.45987pt too wide) in paragraph at lines 266--269
+\OT1/cmr/m/n/9 worth of its rep-re-sen-ta-tional ca-pac-ity to training-view-sp
+ecific
+ []
+
+
+Overfull \hbox (1.67374pt too wide) in paragraph at lines 278--281
+\OT1/cmr/m/n/9 the pre-ci-sion of SH co-ef-fi-cients, it pref-er-en-tially re-m
+oves high-
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 15.26112pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.26112pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.26112pt}.
+
+[3.3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4.4]
+Overfull \hbox (5.34924pt too wide) in paragraph at lines 360--361
+[]\OT1/cmr/bx/n/9 Aggressive\OT1/cmr/m/n/9 : $12\OML/cmm/m/it/9 :\OT1/cmr/m/n/9
+ 5[]$ / $0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 58 []$ (bal-anced + 20% Gauss-
+ []
+
+
+Overfull \hbox (5.75272pt too wide) in paragraph at lines 380--384
+ []\OT1/cmr/m/it/9 Comparison with Prior Work.[] \OT1/cmr/m/n/9 Ta-ble []3[] po
+-si-tions Tur-boSplat
+ []
+
+
+Overfull \hbox (7.42305pt too wide) in paragraph at lines 385--390
+\OT1/cmr/m/n/9 near-optimality guar-an-tees (within $2\OML/cmm/m/it/9 :\OT1/cmr
+/m/n/9 7[]$ of the Shan-non bound
+ []
+
+
+Overfull \hbox (7.1605pt too wide) in paragraph at lines 385--390
+\OT1/cmr/m/n/9 ment sce-nar-ios re-quir-ing im-me-di-ate com-pres-sion of pre-t
+rained
+ []
+
+
+Overfull \hbox (1.58969pt too wide) in paragraph at lines 422--425
+\OT1/cmr/m/n/9 test PSNR, with degra-da-tion ac-cel-er-at-ing at lower bit dept
+hs.
+ []
+
+
+Overfull \hbox (7.7403pt too wide) in paragraph at lines 434--438
+\OT1/cmr/m/n/9 neigh-bor-ing Gaus-sians. Our ag-gres-sive op-er-at-ing point ($
+12\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 5[]$)
+ []
+
+
+Overfull \hbox (2.50581pt too wide) in paragraph at lines 445--450
+[]\OT1/cmr/m/n/9 Consider \OT1/cmr/m/it/9 fi-cus\OT1/cmr/m/n/9 : its over-fit-t
+ing ra-tio $\OML/cmm/m/it/9 R[][]\OT1/cmr/m/n/9 3\OML/cmm/m/it/9 :\OT1/cmr/m/n/
+9 28$ sug-gests $[]70%$
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 15.26112pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.26112pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.26112pt}.
+
+[5.5]
+Overfull \hbox (9.4342pt too wide) in paragraph at lines 468--470
+[]\OT1/cmr/m/n/9 This phenomenon---compression as regularization---has been
+ []
+
+
+Overfull \hbox (3.8021pt too wide) in paragraph at lines 519--523
+\OT1/cmr/m/n/9 gen-er-al-iza-tion and com-press-ibil-ity. The re-sults were uni
+-formly
+ []
+
+
+Overfull \hbox (5.9779pt too wide) in paragraph at lines 519--523
+\OT1/cmr/m/n/9 mul-ti-ple reg-u-lar-iza-tion strengths with-out mean-ing-ful im
+-prove-
+ []
+
+
+Overfull \hbox (4.1035pt too wide) in paragraph at lines 519--523
+\OT1/cmr/m/n/9 ment in com-pres-sion ra-tios. The reg-u-lar-iza-tion was too co
+arse:
+ []
+
+[6.6]
+Overfull \hbox (6.82306pt too wide) in paragraph at lines 532--537
+\OT1/cmr/m/n/9 3DGS with ap-pear-ance em-bed-dings, mini-Splatting) and could
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 15.26112pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.26112pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.26112pt}.
+
+[7.7
+
+]
+Package pgfplots info on input line 577: Using 'lua backend=false' for axis: xm
+ode=log unsupported (yet).
+
+
+Class acmart Warning: A possible image without description on input line 619.
+
+Package pgfplots info on input line 695: Using 'lua backend=false' for axis: x 
+coord trafo unsupported.
+
+Class acmart Warning: A possible image without description on input line 715.
+
+Package pgfplots info on input line 778: Using 'lua backend=false' for axis: x 
+coord trafo unsupported.
+
+Class acmart Warning: A possible image without description on input line 815.
+
+(./main.bbl
+Underfull \hbox (badness 1173) in paragraph at lines 55--60
+\OT1/cmr/m/n/7 Jian-fei Jia. 2025.  Fast Com-press-ible 3D Gauss-ian Splat-
+ []
+
+
+Underfull \hbox (badness 6016) in paragraph at lines 179--185
+[]\OT1/cmr/m/n/7 Ben Milden-hall, Pratul P. Srini-vasan, Matthew Tan-cik,
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 179--185
+\OT1/cmr/m/n/7 NeRF: Rep-re-sent-ing Scenes as Neu-ral Ra-di-ance Fields for
+ []
+
+) (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
+)
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-utf8.def
+File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
+)
+
+Class acmart Warning: Some images may lack descriptions.
+(acmart)              ACM is committed to complying with the upcoming US ADA ht
+tps://accessiblyapp.com/accessibility-compliance/ada/ and European Accessibilit
+y Act (EAA) https://accessiblyapp.com/accessibility-compliance/eaa/ regulations
+ by actively working to ensure our publications and application services are ac
+cessible to individuals with disabilities, adhering to the WCAG guidelines to p
+rovide a seamless experience for all users, and regularly reviewing our accessi
+bility practices to maintain compliance with evolving standards. 
+(acmart)              To this end, we strongly encourage our authors to provide
+ alternative text and captions for images and multimedia content. It is also im
+portant to optimize color contrast for the visually impaired. Taking these impo
+rtant steps when creating your papers will ensure that the widest possible audi
+ence can ingest your work..
+
+
+Class acmart Warning: ACM reference format is mandatory 
+(acmart)              for papers over one page. 
+(acmart)              Please add printacmref=true to the 
+(acmart)              \settopmatter command..
+
+[8.8
+
+]
+
+Package fancyhdr Warning: \headheight is too small (13.0pt): 
+(fancyhdr)                Make it at least 15.26112pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.26112pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.26112pt}.
+
+[9.9] [10.10] (./main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 30B6E1E112462D6CAF0ED76818FDEE3E;3853.
+ ) 
+Here is how much of TeX's memory you used:
+ 38116 strings out of 480171
+ 858109 string characters out of 5894489
+ 1390328 words of memory out of 5000000
+ 55139 multiletter control sequences out of 15000+600000
+ 482470 words of font info for 75 fonts, out of 8000000 for 9000
+ 220 hyphenation exceptions out of 8191
+ 84i,20n,131p,997b,2380s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/jj/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (10 pages, 432645 bytes).
+PDF statistics:
+ 396 PDF objects out of 1000 (max. 8388607)
+ 342 compressed objects within 4 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+

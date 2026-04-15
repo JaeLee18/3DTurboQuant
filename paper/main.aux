@@ -1,0 +1,162 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{kerbl2023gaussians}
+\citation{chen2025hacpp,chen2024fcgs,flexgaussian2025,lightgaussian2024,compact3d2024}
+\citation{mildenhall2020nerf}
+\citation{barron2022mipnerf360}
+\citation{knapitsch2017tanks}
+\citation{hedman2018deep}
+\citation{zandieh2025turboquant}
+\citation{shannon1948}
+\@writefile{toc}{\contentsline {section}{Abstract}{1}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
+\citation{chen2025hacpp}
+\citation{compact3d2024}
+\citation{lightgaussian2024}
+\citation{chen2024fcgs}
+\citation{flexgaussian2025}
+\citation{entropygs2025}
+\citation{dropanshgs2026}
+\citation{mipsplatting2024}
+\citation{zandieh2025turboquant}
+\citation{lloyd1982least}
+\citation{shannon1948,gersho1979asymptotically}
+\citation{kerbl2023gaussians}
+\citation{mildenhall2020nerf}
+\citation{barron2022mipnerf360}
+\citation{knapitsch2017tanks}
+\citation{hedman2018deep}
+\citation{barron2022mipnerf360}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{2}{2}{Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{3DGS Compression.}{2}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Overfitting in Neural Representations.}{2}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Vector Quantization Theory.}{2}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}SH Overfitting Analysis}{2}{section.3}\protected@file@percent }
+\newlabel{sec:overfitting}{{3}{2}{SH Overfitting Analysis}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Experimental Setup}{2}{subsection.3.1}\protected@file@percent }
+\newlabel{sec:setup}{{3.1}{2}{Experimental Setup}{subsection.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Measuring the Train/Test Gap}{2}{subsection.3.2}\protected@file@percent }
+\newlabel{sec:gap}{{3.2}{2}{Measuring the Train/Test Gap}{subsection.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Per-Band Overfitting Ratio}{2}{subsection.3.3}\protected@file@percent }
+\newlabel{sec:perband}{{3.3}{2}{Per-Band Overfitting Ratio}{subsection.3.3}{}}
+\newlabel{eq:overfitting_ratio}{{2}{2}{Per-Band Overfitting Ratio}{equation.3.2}{}}
+\citation{zandieh2025turboquant}
+\citation{lloyd1982least}
+\citation{shannon1948,gersho1979asymptotically}
+\@writefile{toc}{\contentsline {paragraph}{NeRF Synthetic.}{3}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{COLMAP Scenes.}{3}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Interpretation: Noise Fraction.}{3}{section*.10}\protected@file@percent }
+\newlabel{eq:noise_frac}{{3}{3}{Interpretation: Noise Fraction}{equation.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Implications for Compression}{3}{subsection.3.4}\protected@file@percent }
+\newlabel{sec:implications}{{3.4}{3}{Implications for Compression}{subsection.3.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}TurboSplat: Training-Free Compression}{3}{section.4}\protected@file@percent }
+\newlabel{sec:method}{{4}{3}{TurboSplat: Training-Free Compression}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Background: TurboQuant}{3}{subsection.4.1}\protected@file@percent }
+\newlabel{sec:turboquant}{{4.1}{3}{Background: TurboQuant}{subsection.4.1}{}}
+\newlabel{eq:mse_bound}{{4}{3}{Background: TurboQuant}{equation.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Compression Pipeline}{3}{subsection.4.2}\protected@file@percent }
+\newlabel{sec:pipeline}{{4.2}{3}{Compression Pipeline}{subsection.4.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{SH Coefficients ($\ell \geq 1$).}{3}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Positions.}{3}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Other Attributes.}{3}{section*.14}\protected@file@percent }
+\citation{kerbl2023gaussians}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces SH overfitting analysis and compression results across 21 benchmark scenes. \textbf  {Left:} $G$\nonbreakingspace =\nonbreakingspace train/test PSNR gap (dB); $R_{k}$\nonbreakingspace =\nonbreakingspace overfitting ratio for SH band $\ell {=}k$ (Eq.\nonbreakingspace \ref  {eq:overfitting_ratio}). Higher $R_{k}$ indicates more overfitting. The hierarchy $R_{1} < R_{2} < R_{3}$ holds on average. \textbf  {Right:} TurboSplat{} compression ratio and PSNR change ($\Delta $) at the balanced operating point. Bold entries highlight effectively free compression ($|\Delta | \leq 0.05\,\text  {dB}$).\relax }}{4}{table.caption.11}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:overfitting}{{1}{4}{SH overfitting analysis and compression results across 21 benchmark scenes. \textbf {Left:} $G$~=~train/test PSNR gap (dB); $\R {k}$~=~overfitting ratio for SH band $\ell {=}k$ (Eq.~\ref {eq:overfitting_ratio}). Higher $\R {k}$ indicates more overfitting. The hierarchy $\R {1} < \R {2} < \R {3}$ holds on average. \textbf {Right:} \ours {} compression ratio and PSNR change ($\Delta $) at the balanced operating point. Bold entries highlight effectively free compression ($|\Delta | \leq 0.05\dB $).\relax }{table.caption.11}{}}
+\@writefile{toc}{\contentsline {paragraph}{Entropy Coding.}{4}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Summary.}{4}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Compression Results}{4}{subsection.4.3}\protected@file@percent }
+\newlabel{sec:results}{{4.3}{4}{Compression Results}{subsection.4.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Per-Scene Performance.}{4}{section*.17}\protected@file@percent }
+\citation{chen2025hacpp}
+\citation{entropygs2025}
+\citation{flexgaussian2025}
+\citation{chen2024fcgs}
+\citation{chen2025hacpp}
+\citation{entropygs2025}
+\citation{flexgaussian2025}
+\citation{chen2024fcgs}
+\citation{lightgaussian2024}
+\citation{compact3d2024}
+\citation{kerbl2023gaussians}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Rate-distortion Pareto frontier of TurboSplat{} training-free compression. All configurations run on CPU without training data.\relax }}{5}{table.caption.19}\protected@file@percent }
+\newlabel{tab:pareto}{{2}{5}{Rate-distortion Pareto frontier of \ours {} training-free compression. All configurations run on CPU without training data.\relax }{table.caption.19}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Comparison of 3DGS compression methods. Prov.\nonbreakingspace =\nonbreakingspace provable distortion bound.\relax }}{5}{table.caption.21}\protected@file@percent }
+\newlabel{tab:comparison}{{3}{5}{Comparison of 3DGS compression methods. Prov.~=~provable distortion bound.\relax }{table.caption.21}{}}
+\@writefile{toc}{\contentsline {paragraph}{Rate-Distortion Pareto.}{5}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Comparison with Prior Work.}{5}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Analysis and Discussion}{5}{section.5}\protected@file@percent }
+\newlabel{sec:analysis}{{5}{5}{Analysis and Discussion}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}The Quantization Wall}{5}{subsection.5.1}\protected@file@percent }
+\newlabel{sec:wall}{{5.1}{5}{The Quantization Wall}{subsection.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Scene-Dependent SH Sensitivity}{5}{subsection.5.2}\protected@file@percent }
+\newlabel{sec:scenedep}{{5.2}{5}{Scene-Dependent SH Sensitivity}{subsection.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Why Compression Can Improve Quality}{6}{subsection.5.3}\protected@file@percent }
+\newlabel{sec:improve}{{5.3}{6}{Why Compression Can Improve Quality}{subsection.5.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Bit Budget Decomposition}{6}{subsection.5.4}\protected@file@percent }
+\newlabel{sec:budget}{{5.4}{6}{Bit Budget Decomposition}{subsection.5.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Per-Gaussian bit budget decomposition at the balanced operating point, before entropy coding. SH coefficients remain the dominant storage component even after $16{\times }$ quantization.\relax }}{6}{table.caption.22}\protected@file@percent }
+\newlabel{tab:budget}{{4}{6}{Per-Gaussian bit budget decomposition at the balanced operating point, before entropy coding. SH coefficients remain the dominant storage component even after $16{\times }$ quantization.\relax }{table.caption.22}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Limitations and Failed Directions}{6}{subsection.5.5}\protected@file@percent }
+\newlabel{sec:limitations}{{5.5}{6}{Limitations and Failed Directions}{subsection.5.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Compression Ratio.}{6}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Training-Time Regularization.}{6}{section*.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Adaptive Bit Allocation.}{6}{section*.25}\protected@file@percent }
+\citation{entropygs2025,chen2024fcgs}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Future Directions}{7}{subsection.5.6}\protected@file@percent }
+\newlabel{sec:future}{{5.6}{7}{Future Directions}{subsection.5.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{7}{section.6}\protected@file@percent }
+\newlabel{sec:conclusion}{{6}{7}{Conclusion}{section.6}{}}
+\bibstyle{ACM-Reference-Format}
+\bibdata{references}
+\bibcite{barron2022mipnerf360}{{1}{2022}{{Barron et~al\mbox  {.}}}{{}}}
+\bibcite{chen2024fcgs}{{2}{2025a}{{Chen et~al\mbox  {.}}}{{}}}
+\bibcite{chen2025hacpp}{{3}{2025b}{{Chen et~al\mbox  {.}}}{{}}}
+\bibcite{lightgaussian2024}{{4}{2024}{{Fan et~al\mbox  {.}}}{{}}}
+\bibcite{gersho1979asymptotically}{{5}{1979}{{Gersho}}{{}}}
+\bibcite{hedman2018deep}{{6}{2018}{{Hedman et~al\mbox  {.}}}{{}}}
+\bibcite{kerbl2023gaussians}{{7}{2023}{{Kerbl et~al\mbox  {.}}}{{}}}
+\bibcite{dropanshgs2026}{{8}{2026}{{Kim and Park}}{{}}}
+\bibcite{knapitsch2017tanks}{{9}{2017}{{Knapitsch et~al\mbox  {.}}}{{}}}
+\bibcite{compact3d2024}{{10}{2024}{{Lee et~al\mbox  {.}}}{{}}}
+\bibcite{flexgaussian2025}{{11}{2025}{{Li et~al\mbox  {.}}}{{}}}
+\bibcite{lloyd1982least}{{12}{1982}{{Lloyd}}{{}}}
+\bibcite{mildenhall2020nerf}{{13}{2020}{{Mildenhall et~al\mbox  {.}}}{{}}}
+\bibcite{shannon1948}{{14}{1948}{{Shannon}}{{}}}
+\bibcite{entropygs2025}{{15}{2025}{{Yang and Liang}}{{}}}
+\bibcite{mipsplatting2024}{{16}{2024}{{Yu et~al\mbox  {.}}}{{}}}
+\bibcite{zandieh2025turboquant}{{17}{2026}{{Zandieh et~al\mbox  {.}}}{{}}}
+\newlabel{tocindent-1}{0pt}
+\newlabel{tocindent0}{0pt}
+\newlabel{tocindent1}{4.62497pt}
+\newlabel{tocindent2}{11.81937pt}
+\newlabel{tocindent3}{0pt}
+\newlabel{tocindent4}{0pt}
+\newlabel{tocindent5}{0pt}
+\@writefile{toc}{\contentsline {section}{References}{8}{section*.30}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {Rate-distortion frontier of 3DGS compression.} TurboSplat{} (blue curve) traces the Pareto frontier of training-free compression with provable optimality guarantees. Competing methods (individual markers) achieve higher ratios but require GPU access and/or training. The dotted vertical line marks the approximate quantization wall (${\sim }10{\times }$) beyond which training-free methods require Gaussian merging. The dashed horizontal line indicates zero quality loss.\relax }}{9}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:rd_frontier}{{1}{9}{\textbf {Rate-distortion frontier of 3DGS compression.} \ours {} (blue curve) traces the Pareto frontier of training-free compression with provable optimality guarantees. Competing methods (individual markers) achieve higher ratios but require GPU access and/or training. The dotted vertical line marks the approximate quantization wall (${\sim }10{\times }$) beyond which training-free methods require Gaussian merging. The dashed horizontal line indicates zero quality loss.\relax }{figure.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {SH overfitting analysis.} (a)\nonbreakingspace Overfitting gap $G$ versus compression-induced PSNR change for all 21 scenes. High-gap scenes (drjohnson, playroom, treehill) cluster near zero compression loss, confirming the ``damage budget'' hypothesis. Scenes with genuine view-dependent content (mic, ficus) suffer more despite moderate gaps. (b)\nonbreakingspace Average overfitting ratio $R_{k}$ per SH band on NeRF Synthetic, showing the consistent hierarchy $R_{1} < R_{2} < R_{3}$. The dashed line at $R_{k}{=}1$ indicates zero overfitting; $R_{3}{=}2.45$ implies ${\sim }59\%$ of band\nonbreakingspace 3 content is noise.\relax }}{9}{figure.caption.27}\protected@file@percent }
+\newlabel{fig:overfitting}{{2}{9}{\textbf {SH overfitting analysis.} (a)~Overfitting gap $G$ versus compression-induced PSNR change for all 21 scenes. High-gap scenes (drjohnson, playroom, treehill) cluster near zero compression loss, confirming the ``damage budget'' hypothesis. Scenes with genuine view-dependent content (mic, ficus) suffer more despite moderate gaps. (b)~Average overfitting ratio $\R {k}$ per SH band on NeRF Synthetic, showing the consistent hierarchy $\R {1} < \R {2} < \R {3}$. The dashed line at $\R {k}{=}1$ indicates zero overfitting; $\R {3}{=}2.45$ implies ${\sim }59\%$ of band~3 content is noise.\relax }{figure.caption.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Quantization wall and per-scene results.} (a)\nonbreakingspace Position bit sensitivity on \textit  {stump}: each bit removed below 16 incurs ${\sim }0.86\,\text  {dB}$ additional loss, establishing 16-bit positions as the minimum for COLMAP scenes. This sensitivity defines the quantization wall---the fundamental limit of training-free compression. (b)\nonbreakingspace Per-scene PSNR change at the balanced operating point ($9.1{\times }$ average), sorted by increasing loss. Four scenes (playroom, drjohnson, treehill, garden) achieve effectively free compression; playroom \emph  {improves} under compression.\relax }}{10}{figure.caption.28}\protected@file@percent }
+\newlabel{fig:wall}{{3}{10}{\textbf {Quantization wall and per-scene results.} (a)~Position bit sensitivity on \textit {stump}: each bit removed below 16 incurs ${\sim }0.86\dB $ additional loss, establishing 16-bit positions as the minimum for COLMAP scenes. This sensitivity defines the quantization wall---the fundamental limit of training-free compression. (b)~Per-scene PSNR change at the balanced operating point ($9.1{\times }$ average), sorted by increasing loss. Four scenes (playroom, drjohnson, treehill, garden) achieve effectively free compression; playroom \emph {improves} under compression.\relax }{figure.caption.28}{}}
+\newlabel{TotPages}{{10}{10}{}{page.10}{}}
+\gdef \@abspage@last{10}

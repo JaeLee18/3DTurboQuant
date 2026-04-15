@@ -1,0 +1,230 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{17}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Barron et~al\mbox{.}(2022)]%
+        {barron2022mipnerf360}
+\bibfield{author}{\bibinfo{person}{Jonathan~T. Barron}, \bibinfo{person}{Ben
+  Mildenhall}, \bibinfo{person}{Dor Verbin}, \bibinfo{person}{Pratul~P.
+  Srinivasan}, {and} \bibinfo{person}{Peter Hedman}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Mip-{NeRF} 360: Unbounded Anti-Aliased Neural
+  Radiance Fields}. In \bibinfo{booktitle}{\emph{IEEE/CVF Conference on
+  Computer Vision and Pattern Recognition (CVPR)}}.
+\newblock
+
+
+\bibitem[Chen et~al\mbox{.}(2025a)]%
+        {chen2024fcgs}
+\bibfield{author}{\bibinfo{person}{Yihang Chen}, \bibinfo{person}{Qianyi Wu},
+  \bibinfo{person}{Weiyao Lin}, \bibinfo{person}{Mehrtash Harber}, {and}
+  \bibinfo{person}{Jianfei Jia}.} \bibinfo{year}{2025}\natexlab{a}.
+\newblock \showarticletitle{Fast Compressible {3D} {G}aussian Splatting}. In
+  \bibinfo{booktitle}{\emph{International Conference on Learning
+  Representations (ICLR)}}.
+\newblock
+
+
+\bibitem[Chen et~al\mbox{.}(2025b)]%
+        {chen2025hacpp}
+\bibfield{author}{\bibinfo{person}{Yihang Chen}, \bibinfo{person}{Qianyi Wu},
+  \bibinfo{person}{Weiyao Lin}, \bibinfo{person}{Mehrtash Harber}, {and}
+  \bibinfo{person}{Jianfei Jia}.} \bibinfo{year}{2025}\natexlab{b}.
+\newblock \showarticletitle{{HAC++}: Towards 100x Compression of 3D {G}aussian
+  Splatting}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Pattern Analysis and
+  Machine Intelligence}} (\bibinfo{year}{2025}).
+\newblock
+
+
+\bibitem[Fan et~al\mbox{.}(2024)]%
+        {lightgaussian2024}
+\bibfield{author}{\bibinfo{person}{Zhiwen Fan}, \bibinfo{person}{Kevin Wang},
+  \bibinfo{person}{Kairun Wen}, \bibinfo{person}{Zehao Zhu},
+  \bibinfo{person}{Dejia Xu}, {and} \bibinfo{person}{Zhangyang Wang}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{LightGaussian}: Unbounded {3D} {G}aussian
+  Compression with 15x Reduction and 200+ FPS}. In
+  \bibinfo{booktitle}{\emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}}.
+\newblock
+
+
+\bibitem[Gersho(1979)]%
+        {gersho1979asymptotically}
+\bibfield{author}{\bibinfo{person}{Allen Gersho}.}
+  \bibinfo{year}{1979}\natexlab{}.
+\newblock \showarticletitle{Asymptotically Optimal Block Quantization}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Information Theory}}
+  \bibinfo{volume}{25}, \bibinfo{number}{4} (\bibinfo{year}{1979}),
+  \bibinfo{pages}{373--380}.
+\newblock
+
+
+\bibitem[Hedman et~al\mbox{.}(2018)]%
+        {hedman2018deep}
+\bibfield{author}{\bibinfo{person}{Peter Hedman}, \bibinfo{person}{Julien
+  Philip}, \bibinfo{person}{Tong Price}, \bibinfo{person}{Jan-Michael Frahm},
+  \bibinfo{person}{George Drettakis}, {and} \bibinfo{person}{Gabriel Brostow}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Deep Blending for Free-Viewpoint Image-Based
+  Rendering}. In \bibinfo{booktitle}{\emph{ACM SIGGRAPH Asia 2018}}.
+\newblock
+
+
+\bibitem[Kerbl et~al\mbox{.}(2023)]%
+        {kerbl2023gaussians}
+\bibfield{author}{\bibinfo{person}{Bernhard Kerbl}, \bibinfo{person}{Georgios
+  Kopanas}, \bibinfo{person}{Thomas Leimk{\"u}hler}, {and}
+  \bibinfo{person}{George Drettakis}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{3D {G}aussian Splatting for Real-Time Radiance
+  Field Rendering}. In \bibinfo{booktitle}{\emph{ACM SIGGRAPH 2023 Conference
+  Proceedings}}. \bibinfo{publisher}{ACM}.
+\newblock
+
+
+\bibitem[Kim and Park(2026)]%
+        {dropanshgs2026}
+\bibfield{author}{\bibinfo{person}{Hyunwoo Kim} {and} \bibinfo{person}{Jongmin
+  Park}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{{DropAnSH-GS}: Dropping Anisotropic Spherical
+  Harmonics for Robust Sparse-View {G}aussian Splatting}. In
+  \bibinfo{booktitle}{\emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition (CVPR)}}.
+\newblock
+
+
+\bibitem[Knapitsch et~al\mbox{.}(2017)]%
+        {knapitsch2017tanks}
+\bibfield{author}{\bibinfo{person}{Arno Knapitsch}, \bibinfo{person}{Jaesik
+  Park}, \bibinfo{person}{Qian-Yi Zhou}, {and} \bibinfo{person}{Vladlen
+  Koltun}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Tanks and Temples: Benchmarking Large-Scale Scene
+  Reconstruction}. In \bibinfo{booktitle}{\emph{ACM Transactions on Graphics}}.
+\newblock
+
+
+\bibitem[Lee et~al\mbox{.}(2024)]%
+        {compact3d2024}
+\bibfield{author}{\bibinfo{person}{Joo~Chan Lee}, \bibinfo{person}{Daniel Rho},
+  \bibinfo{person}{Xiangyu Sun}, \bibinfo{person}{Jong~Hwan Ko}, {and}
+  \bibinfo{person}{Eunbyung Park}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Compact {3D} {G}aussian Representation for Radiance
+  Field}. In \bibinfo{booktitle}{\emph{European Conference on Computer Vision
+  (ECCV)}}.
+\newblock
+
+
+\bibitem[Li et~al\mbox{.}(2025)]%
+        {flexgaussian2025}
+\bibfield{author}{\bibinfo{person}{Zhen Li}, \bibinfo{person}{Qiuwen Chen},
+  \bibinfo{person}{Lei Li}, \bibinfo{person}{Ke Xian}, \bibinfo{person}{Hao
+  Lu}, {and} \bibinfo{person}{Zhiguo Cao}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{{FlexGaussian}: Training-Free Compression of {3D}
+  {G}aussian Splatting via Flexible Vector Quantization}. In
+  \bibinfo{booktitle}{\emph{ACM International Conference on Multimedia (ACM
+  MM)}}.
+\newblock
+
+
+\bibitem[Lloyd(1982)]%
+        {lloyd1982least}
+\bibfield{author}{\bibinfo{person}{Stuart~P. Lloyd}.}
+  \bibinfo{year}{1982}\natexlab{}.
+\newblock \showarticletitle{Least Squares Quantization in {PCM}}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Information Theory}}
+  \bibinfo{volume}{28}, \bibinfo{number}{2} (\bibinfo{year}{1982}),
+  \bibinfo{pages}{129--137}.
+\newblock
+
+
+\bibitem[Mildenhall et~al\mbox{.}(2020)]%
+        {mildenhall2020nerf}
+\bibfield{author}{\bibinfo{person}{Ben Mildenhall}, \bibinfo{person}{Pratul~P.
+  Srinivasan}, \bibinfo{person}{Matthew Tancik}, \bibinfo{person}{Jonathan~T.
+  Barron}, \bibinfo{person}{Ravi Ramamoorthi}, {and} \bibinfo{person}{Ren Ng}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{NeRF}: Representing Scenes as Neural Radiance
+  Fields for View Synthesis}. In \bibinfo{booktitle}{\emph{European Conference
+  on Computer Vision (ECCV)}}.
+\newblock
+
+
+\bibitem[Shannon(1948)]%
+        {shannon1948}
+\bibfield{author}{\bibinfo{person}{Claude~E. Shannon}.}
+  \bibinfo{year}{1948}\natexlab{}.
+\newblock \showarticletitle{A Mathematical Theory of Communication}.
+\newblock \bibinfo{journal}{\emph{The Bell System Technical Journal}}
+  \bibinfo{volume}{27}, \bibinfo{number}{3} (\bibinfo{year}{1948}),
+  \bibinfo{pages}{379--423}.
+\newblock
+
+
+\bibitem[Yang and Liang(2025)]%
+        {entropygs2025}
+\bibfield{author}{\bibinfo{person}{Chen Yang} {and} \bibinfo{person}{Jun
+  Liang}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{{EntropyGS}: Training-Free Compression of {3D}
+  {G}aussians with Entropy-Constrained Quantization}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2501.xxxxx}}
+  (\bibinfo{year}{2025}).
+\newblock
+
+
+\bibitem[Yu et~al\mbox{.}(2024)]%
+        {mipsplatting2024}
+\bibfield{author}{\bibinfo{person}{Zehao Yu}, \bibinfo{person}{Anpei Chen},
+  \bibinfo{person}{Binbin Huang}, \bibinfo{person}{Torsten Sattler}, {and}
+  \bibinfo{person}{Andreas Geiger}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Mip-Splatting: Alias-Free {3D} {G}aussian
+  Splatting}. In \bibinfo{booktitle}{\emph{IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition (CVPR)}}.
+\newblock
+
+
+\bibitem[Zandieh et~al\mbox{.}(2026)]%
+        {zandieh2025turboquant}
+\bibfield{author}{\bibinfo{person}{Amir Zandieh}, \bibinfo{person}{Insu Han},
+  {and} \bibinfo{person}{Amin Karbasi}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{{TurboQuant}: Online Vector Quantization with
+  Near-Optimal Distortion Rate}. In \bibinfo{booktitle}{\emph{International
+  Conference on Learning Representations (ICLR)}}.
+\newblock
+
+
+\end{thebibliography}
