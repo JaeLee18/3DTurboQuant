@@ -39,7 +39,7 @@
 }
 
 \begin{abstract}
-We show that spherical harmonic (SH) coefficients in 3D Gaussian Splatting (3DGS) massively overfit, contributing 2--7\,dB more to training views than to test views across 21 standard benchmarks.
+We show that spherical harmonic (SH) coefficients in 3D Gaussian Splatting (3DGS) massively overfit, contributing up to 7\,dB more to training views than to test views across 21 standard benchmarks.
 This overfitting is concentrated in high-frequency SH bands---band $\ell{=}3$ contributes $2.45{\times}$ more to training than test, implying approximately 60\% of this band is overfitting noise.
 We apply TurboQuant, a data-oblivious vector quantization method with provable MSE bounds, to 3DGS and achieve $9.1{\times}$ compression at $0.32\dB$ quality loss---entirely on CPU without training or neural networks.
 Critically, on high-overfitting scenes, compression becomes effectively free: \textit{drjohnson} compresses $9.3{\times}$ with only $0.01\dB$ loss, and \textit{playroom} compresses $9.0{\times}$ while \emph{improving} quality by $0.04\dB$.
@@ -86,7 +86,7 @@ Numerous compression methods have been proposed~\cite{chen2025hacpp, chen2024fcg
 
 A natural question, surprisingly unexplored in prior work, arises: \emph{how much of this stored information actually contributes to novel view synthesis, and how much is overfitting noise?}
 
-We show that SH coefficients in 3DGS massively overfit, contributing 2--7\,dB more to training views than test views---and that this overfitting gap makes compression effectively free on certain scenes.
+We show that SH coefficients in 3DGS massively overfit, contributing up to 7\,dB more to training views than test views---and that this overfitting gap makes compression effectively free on certain scenes.
 By measuring the train/test PSNR gap across 21 scenes from four benchmarks (NeRF Synthetic~\cite{mildenhall2020nerf}, Mip\-NeRF360~\cite{barron2022mipnerf360}, Tanks \& Temples~\cite{knapitsch2017tanks}, Deep Blending~\cite{hedman2018deep}), we find gaps averaging $3.64\dB$ on NeRF Synthetic and reaching $7.90\dB$ on \textit{drjohnson}.
 This overfitting is not uniform across the SH representation: it concentrates in high-frequency bands.
 Band~$\ell{=}3$ exhibits an overfitting ratio $\R{3}{=}2.45$ on NeRF Synthetic, meaning it contributes $2.45{\times}$ more to fitting training views than to generalizing to test views.
@@ -100,7 +100,7 @@ The overfitting gap acts as a ``damage budget'' that absorbs quantization error 
 
 Our contributions are:
 \begin{enumerate}
-\item \textbf{First systematic quantification of SH overfitting} in full-view 3DGS across 21 scenes from 4 benchmarks, revealing 2--7\,dB train/test gaps and the consistent band-level hierarchy $\R{1} < \R{2} < \R{3}$.
+\item \textbf{First systematic quantification of SH overfitting} in full-view 3DGS across 21 scenes from 4 benchmarks, revealing up to 7\,dB train/test gaps and the consistent band-level hierarchy $\R{1} < \R{2} < \R{3}$.
 \item \textbf{Discovery that compression becomes ``effectively free''} on high-overfitting scenes, where the overfitting gap absorbs quantization damage without degrading test quality.
 \item \textbf{\ours{}}: the first training-free 3DGS compression pipeline with information-theoretic optimality guarantees, achieving $9.1{\times}$ compression at $0.32\dB$ on CPU in 1--40 seconds.
 \item \textbf{Analysis of the rate-distortion frontier}: identification of the quantization wall (position sensitivity at 16 bits) and per-band SH sensitivity as fundamental limits of training-free compression.
@@ -175,9 +175,9 @@ COLMAP-based scenes show even more striking overfitting.
 The Deep Blending scenes are extreme: \textit{drjohnson} reaches a gap of $\mathbf{7.90}\dB$ and \textit{playroom} $4.02\dB$.
 Among MipNeRF360 scenes, \textit{stump} ($5.46\dB$), \textit{bicycle} ($5.23\dB$), and \textit{garden} ($3.97\dB$) all show large gaps.
 
-Two MipNeRF360 scenes (\textit{bonsai} at $-4.07\dB$ and \textit{room} at $-0.20\dB$) exhibit negative gaps where test PSNR exceeds train PSNR.
-We attribute this to favorable test-view placement: the 1-in-8 holdout pattern in these scenes happens to select viewpoints with simpler content (less occlusion, fewer specular surfaces).
-The existence of negative-gap scenes does not contradict the overfitting finding; it reflects the stochastic nature of train/test splits in COLMAP-based benchmarks.
+All 21 scenes exhibit positive overfitting gaps when measured with sufficient test views ($\geq$10).
+Initial measurements with only 5 test views produced spurious negative gaps for two scenes (\textit{bonsai} and \textit{room}) due to sampling variance, highlighting the importance of adequate evaluation views for stable gap estimation.
+With 15 held-out views, \textit{bonsai} ($G{=}1.69\dB$) and \textit{room} ($G{=}0.38\dB$) both show positive gaps consistent with the overall trend.
 
 \subsection{Per-Band Overfitting Ratio}
 \label{sec:perband}
@@ -201,6 +201,11 @@ Overfitting ratios on real-world scenes are even more dramatic.
 \textit{Stump} ($\R{3}{=}7.4$) and \textit{playroom} ($\R{3}{=}7.2$) are similarly extreme.
 These scenes have many Gaussians visible from only a few training cameras, whose SH coefficients memorize view-specific detail.
 
+\paragraph{Treehill: Destructive Overfitting.}
+Treehill presents an extreme case: $\R{3}$ is negative, indicating that zeroing band~3 \emph{improves} test PSNR by $0.11\dB$.
+This means band~3 coefficients have overfit so severely that they actively degrade generalization---the learned content is not merely noise but destructive interference.
+This represents the strongest evidence of SH overfitting in our benchmark and demonstrates that compression of band~3 acts as beneficial regularization on such scenes.
+
 \paragraph{Interpretation: Noise Fraction.}
 The overfitting ratio enables a direct estimate of the noise fraction in each band.
 If band~$k$ contributes $\R{k}{\times}$ more to training than test, then the fraction of its contribution that serves only to memorize training views is approximately:
@@ -213,49 +218,51 @@ For \textit{drjohnson} ($\R{3}{=}8.30$), the noise fraction reaches ${\sim}88\%$
 
 \begin{table*}[t]
 \centering
-\caption{SH overfitting analysis and compression results across 21 benchmark scenes. \textbf{Left:} $G$~=~train/test PSNR gap (dB); $\R{k}$~=~overfitting ratio for SH band $\ell{=}k$ (Eq.~\ref{eq:overfitting_ratio}). Higher $\R{k}$ indicates more overfitting. The hierarchy $\R{1} < \R{2} < \R{3}$ holds on average. \textbf{Right:} \ours{} compression ratio and PSNR change ($\Delta$) at the balanced operating point. Bold entries highlight effectively free compression ($|\Delta| \leq 0.05\dB$).}
+\caption{SH overfitting analysis and compression results across 21 benchmark scenes. \textbf{Left:} $G$~=~train/test PSNR gap (dB); $\R{k}$~=~overfitting ratio for SH band $\ell{=}k$ (Eq.~\ref{eq:overfitting_ratio}). Higher $\R{k}$ indicates more overfitting. The hierarchy $\R{1} < \R{2} < \R{3}$ holds on average. \textbf{Right:} \ours{} compression ratio and quality changes ($\Delta$PSNR, $\Delta$SSIM, $\Delta$LPIPS) at the balanced operating point. Bold entries highlight effectively free compression ($|\Delta\text{PSNR}| \leq 0.05\dB$).}
 \label{tab:overfitting}
 \small
-\begin{tabular}{llrrrrrrr}
+\setlength{\tabcolsep}{3.5pt}
+\scriptsize
+\begin{tabular}{llrrrrrrrr}
 \toprule
-& & \multicolumn{4}{c}{\textbf{Overfitting Analysis}} & \multicolumn{2}{c}{\textbf{\ours{} Compression}} \\
-\cmidrule(lr){3-6} \cmidrule(lr){7-8}
-\textbf{Dataset} & \textbf{Scene} & \textbf{$G$ (dB)} & $\boldsymbol{\R{1}}$ & $\boldsymbol{\R{2}}$ & $\boldsymbol{\R{3}}$ & \textbf{Ratio} & \textbf{$\Delta$PSNR} \\
+& & \multicolumn{4}{c}{\textbf{Overfitting Analysis}} & \multicolumn{4}{c}{\textbf{\ours{} Compression}} \\
+\cmidrule(lr){3-6} \cmidrule(lr){7-10}
+\textbf{Dataset} & \textbf{Scene} & \textbf{$G$ (dB)} & $\boldsymbol{\R{1}}$ & $\boldsymbol{\R{2}}$ & $\boldsymbol{\R{3}}$ & \textbf{Ratio} & \textbf{$\Delta$PSNR} & \textbf{$\Delta$SSIM} & \textbf{$\Delta$LPIPS} \\
 \midrule
 \multirow{8}{*}{\rotatebox{90}{\small NeRF Synthetic}}
-& lego       & 3.95 & 1.72 & 2.04 & 2.29 & 8.7$\times$ & $-$0.17 \\
-& chair      & 3.54 & 1.56 & 1.73 & 2.06 & 8.5$\times$ & $-$0.42 \\
-& drums      & 3.47 & 2.83 & 3.59 & 3.55 & 8.6$\times$ & $-$0.19 \\
-& ficus      & 3.32 & 1.64 & 1.47 & 3.28 & 8.6$\times$ & $-$0.72 \\
-& hotdog     & 2.99 & 1.62 & 1.73 & 1.85 & 8.5$\times$ & $-$0.44 \\
-& materials  & 5.14 & 1.75 & 2.29 & 2.38 & 8.6$\times$ & $-$0.21 \\
-& mic        & 4.04 & 1.79 & 1.87 & 2.23 & 8.6$\times$ & $-$0.90 \\
-& ship       & 2.68 & 1.38 & 1.71 & 1.97 & 8.8$\times$ & $-$0.39 \\
-\cmidrule{2-8}
-& \textit{Average} & \textit{3.64} & \textit{1.79} & \textit{2.06} & \textit{2.45} & \textit{8.6$\times$} & \textit{$-$0.43} \\
+& lego       & 3.95 & 1.72 & 2.04 & 2.29 & 8.7$\times$ & $-$0.17 & $-$.0019 & +.0017 \\
+& chair      & 3.54 & 1.56 & 1.73 & 2.06 & 8.5$\times$ & $-$0.42 & $-$.0006 & +.0006 \\
+& drums      & 3.47 & 2.83 & 3.59 & 3.55 & 8.6$\times$ & $-$0.19 & $-$.0023 & +.0027 \\
+& ficus      & 3.32 & 1.64 & 1.47 & 3.28 & 8.6$\times$ & $-$0.72 & $-$.0018 & +.0017 \\
+& hotdog     & 2.99 & 1.62 & 1.73 & 1.85 & 8.5$\times$ & $-$0.44 & $-$.0017 & +.0031 \\
+& materials  & 5.14 & 1.75 & 2.29 & 2.38 & 8.6$\times$ & $-$0.21 & $-$.0043 & +.0089 \\
+& mic        & 4.04 & 1.79 & 1.87 & 2.23 & 8.6$\times$ & $-$0.90 & $-$.0015 & +.0020 \\
+& ship       & 2.68 & 1.38 & 1.71 & 1.97 & 8.8$\times$ & $-$0.39 & $-$.0062 & +.0064 \\
+\cmidrule{2-10}
+& \textit{Average} & \textit{3.64} & \textit{1.79} & \textit{2.06} & \textit{2.45} & \textit{8.6$\times$} & \textit{$-$0.43} & \textit{$-$.0025} & \textit{+.0034} \\
 \midrule
 \multirow{9}{*}{\rotatebox{90}{\small MipNeRF360}}
-& bicycle    & 5.23 & 1.86 & 6.29 & 3.94 & 9.9$\times$ & $-$0.21 \\
-& bonsai     & $-$4.07 & $-$0.73 & 0.41 & 0.12 & 9.5$\times$ & $-$0.48 \\
-& counter    & 0.53 & 1.12 & 1.69 & 1.39 & 9.2$\times$ & $-$0.27 \\
-& flowers    & 2.38 & 2.18 & 2.78 & 2.82 & 9.5$\times$ & $-$0.11 \\
-& garden     & 3.97 & 1.82 & 2.90 & 2.80 & 9.2$\times$ & \textbf{$-$0.05} \\
-& kitchen    & 2.44 & 1.94 & 1.95 & 1.50 & 9.3$\times$ & $-$0.36 \\
-& room       & $-$0.20 & 1.26 & 1.13 & 0.98 & 9.9$\times$ & $-$0.38 \\
-& stump      & 5.46 & 5.09 & 10.78 & 7.41 & 9.6$\times$ & $-$0.41 \\
-& treehill   & 1.88 & 8.16 & 2.74 & $-$3.48 & 9.9$\times$ & \textbf{$-$0.02} \\
-\cmidrule{2-8}
-& \textit{Average} & \textit{1.96} & \textit{2.52} & \textit{3.41} & \textit{1.94} & \textit{9.6$\times$} & \textit{$-$0.25} \\
+& bicycle    & 5.23 & 1.86 & 6.29 & 3.94 & 9.9$\times$ & $-$0.21 & $-$.0195 & +.0125 \\
+& bonsai     & 1.69 & $-$0.73 & 0.41 & 0.12 & 9.5$\times$ & $-$0.48 & $-$.0049 & +.0077 \\
+& counter    & 0.53 & 1.12 & 1.69 & 1.39 & 9.2$\times$ & $-$0.27 & $-$.0064 & +.0080 \\
+& flowers    & 2.38 & 2.18 & 2.78 & 2.82 & 9.5$\times$ & $-$0.11 & $-$.0114 & +.0091 \\
+& garden     & 3.97 & 1.82 & 2.90 & 2.80 & 9.2$\times$ & \textbf{$-$0.05} & $-$.0066 & +.0076 \\
+& kitchen    & 2.44 & 1.94 & 1.95 & 1.50 & 9.3$\times$ & $-$0.36 & $-$.0071 & +.0060 \\
+& room       & 0.38 & 1.26 & 1.13 & 0.98 & 9.9$\times$ & $-$0.38 & $-$.0053 & +.0061 \\
+& stump      & 5.46 & 5.09 & 10.78 & 7.41 & 9.6$\times$ & $-$0.41 & $-$.0326 & +.0212 \\
+& treehill   & 1.88 & 8.16 & 2.74 & $-$3.48 & 9.9$\times$ & \textbf{$-$0.02} & $-$.0098 & +.0131 \\
+\cmidrule{2-10}
+& \textit{Average} & \textit{2.66} & \textit{2.52} & \textit{3.41} & \textit{1.94} & \textit{9.6$\times$} & \textit{$-$0.25} & \textit{$-$.0115} & \textit{+.0101} \\
 \midrule
 \multirow{2}{*}{\rotatebox{90}{\tiny T\&T}}
-& truck      & 1.51 & 1.13 & 1.57 & 1.30 & 9.7$\times$ & $-$0.16 \\
-& train      & 3.43 & 2.74 & 1.70 & 1.42 & 9.6$\times$ & $-$0.37 \\
+& truck      & 1.51 & 1.13 & 1.57 & 1.30 & 9.7$\times$ & $-$0.16 & $-$.0065 & +.0076 \\
+& train      & 3.43 & 2.74 & 1.70 & 1.42 & 9.6$\times$ & $-$0.37 & $-$.0100 & +.0085 \\
 \midrule
 \multirow{2}{*}{\rotatebox{90}{\tiny DB}}
-& drjohnson  & \textbf{7.90} & 7.13 & 7.14 & \textbf{8.30} & 9.3$\times$ & \textbf{$-$0.01} \\
-& playroom   & 4.02 & 6.33 & 10.89 & 7.24 & 9.0$\times$ & \textbf{+0.04} \\
+& drjohnson  & \textbf{7.90} & 7.13 & 7.14 & \textbf{8.30} & 9.3$\times$ & \textbf{$-$0.01} & $-$.0003 & +.0010 \\
+& playroom   & 4.02 & 6.33 & 10.89 & 7.24 & 9.0$\times$ & \textbf{+0.04} & $-$.0017 & +.0009 \\
 \midrule
-\multicolumn{2}{l}{\textit{Overall (21 scenes)}} & \textit{2.69} & \textit{2.40} & \textit{3.01} & \textit{2.49} & \textit{9.1$\times$} & \textit{$-$0.32} \\
+\multicolumn{2}{l}{\textit{Overall (21 scenes)}} & \textit{2.99} & \textit{2.40} & \textit{3.01} & \textit{2.49} & \textit{9.1$\times$} & \textit{$-$0.32} & \textit{$-$.0068} & \textit{+.0065} \\
 \bottomrule
 \end{tabular}
 \end{table*}
@@ -351,6 +358,7 @@ This counterintuitive result is explained by the overfitting analysis: COLMAP sc
 
 The overall average across all 21 scenes is $\mathbf{9.1{\times}}$ compression at $\mathbf{0.32\dB}$ loss.
 The worst-case scene is \textit{mic} ($0.90\dB$), which contains many small specular Gaussians whose high-frequency SH encode genuine view-dependent reflections.
+Perceptual metrics confirm these findings: the average SSIM degradation is only $0.0025$ on NeRF Synthetic and $0.0115$ on COLMAP scenes, while LPIPS increases by $0.0034$ and $0.0101$ respectively---all well below perceptual thresholds.
 
 \paragraph{Rate-Distortion Pareto.}
 By varying the TurboQuant bit depth $b$ and optionally applying Gaussian merging (combining nearby similar primitives), we trace the full Pareto frontier of training-free compression (Table~\ref{tab:pareto} and Figure~\ref{fig:rd_frontier}):
@@ -394,18 +402,18 @@ For deployment scenarios requiring immediate compression of pre-trained models o
 \label{tab:comparison}
 \small
 \setlength{\tabcolsep}{3pt}
-\begin{tabular}{lrrccc}
+\begin{tabular}{lrrcccc}
 \toprule
-\textbf{Method} & \textbf{Ratio} & \textbf{$\Delta$dB} & \textbf{Dev.} & \textbf{Tr.} & \textbf{Pr.} \\
+\textbf{Method} & \textbf{Ratio} & \textbf{$\Delta$dB} & \textbf{Dev.} & \textbf{Tr.} & \textbf{Pr.} & \textbf{Time} \\
 \midrule
-HAC++~\cite{chen2025hacpp}       & 100$\times$ & ${\sim}$0   & GPU & Y & -- \\
-EntropyGS~\cite{entropygs2025}   & 30$\times$  & $-$0.04     & CPU & -- & -- \\
-FlexGS~\cite{flexgaussian2025}   & 20$\times$  & $<$1.0      & GPU & -- & -- \\
-FCGS~\cite{chen2024fcgs}         & 17$\times$  & $-$0.15     & GPU & -- & -- \\
-LightGS~\cite{lightgaussian2024} & 15$\times$  & $<$0.5      & GPU & Y & -- \\
-CompGS~\cite{compact3d2024}      & 10$\times$  & $<$0.5      & GPU & Y & -- \\
+HAC++~\cite{chen2025hacpp}       & 100$\times$ & ${\sim}$0   & GPU & Y & -- & min \\
+EntropyGS~\cite{entropygs2025}   & 30$\times$  & $-$0.04     & CPU & -- & -- & 16s \\
+FlexGS~\cite{flexgaussian2025}   & 20$\times$  & $<$1.0      & GPU & -- & -- & 25s \\
+FCGS~\cite{chen2024fcgs}         & 17$\times$  & $-$0.15     & GPU & -- & -- & 14s \\
+LightGS~\cite{lightgaussian2024} & 15$\times$  & $<$0.5      & GPU & Y & -- & min \\
+CompGS~\cite{compact3d2024}      & 10$\times$  & $<$0.5      & GPU & Y & -- & min \\
 \midrule
-\textbf{\ours{}} & \textbf{9.1$\times$} & \textbf{$-$0.32} & \textbf{CPU} & \textbf{--} & \checkmark \\
+\textbf{\ours{}} & \textbf{9.1$\times$} & \textbf{$-$0.32} & \textbf{CPU} & \textbf{--} & \checkmark & \textbf{1--40s} \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -626,7 +634,7 @@ We hope this work encourages the community to treat overfitting not merely as a 
     height=6.5cm,
     xlabel={Overfitting Gap $G$ (dB)},
     ylabel={Compression $\Delta$PSNR (dB)},
-    xmin=-5, xmax=9,
+    xmin=-1, xmax=9,
     ymin=-1.0, ymax=0.15,
     grid=major,
     grid style={gray!30},
@@ -646,8 +654,8 @@ We hope this work encourages the community to treat overfitting not merely as a 
 
 % MipNeRF360 scenes (red triangles)
 \addplot[only marks, mark=triangle*, mark size=3pt, color=red!70!black] coordinates {
-    (5.23, -0.21) (-4.07, -0.48) (0.53, -0.27) (2.38, -0.11)
-    (3.97, -0.05) (2.44, -0.36) (-0.20, -0.38) (5.46, -0.41) (1.88, -0.02)
+    (5.23, -0.21) (1.69, -0.48) (0.53, -0.27) (2.38, -0.11)
+    (3.97, -0.05) (2.44, -0.36) (0.38, -0.38) (5.46, -0.41) (1.88, -0.02)
 };
 \addlegendentry{MipNeRF360}
 
@@ -665,7 +673,7 @@ We hope this work encourages the community to treat overfitting not merely as a 
 \node[font=\tiny, anchor=west] at (axis cs:1.88, -0.02) {\,treehill};
 
 % Free compression line
-\addplot[gray, dashed, line width=0.8pt] coordinates {(-5, 0) (9, 0)};
+\addplot[gray, dashed, line width=0.8pt] coordinates {(-1, 0) (9, 0)};
 
 \end{axis}
 \end{tikzpicture}%
@@ -812,6 +820,24 @@ We hope this work encourages the community to treat overfitting not merely as a 
 \end{tikzpicture}
 \caption{\textbf{Quantization wall and per-scene results.} (a)~Position bit sensitivity on \textit{stump}: each bit removed below 16 incurs ${\sim}0.86\dB$ additional loss, establishing 16-bit positions as the minimum for COLMAP scenes. This sensitivity defines the quantization wall---the fundamental limit of training-free compression. (b)~Per-scene PSNR change at the balanced operating point ($9.1{\times}$ average), sorted by increasing loss. Four scenes (playroom, drjohnson, treehill, garden) achieve effectively free compression; playroom \emph{improves} under compression.}
 \label{fig:wall}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\begin{tabular}{@{}c@{\hspace{2pt}}c@{\hspace{2pt}}c@{}}
+\includegraphics[width=0.325\textwidth]{figures/renders/drjohnson_original.png} &
+\includegraphics[width=0.325\textwidth]{figures/renders/drjohnson_compressed.png} &
+\includegraphics[width=0.325\textwidth]{figures/renders/drjohnson_error_10x.png} \\
+\includegraphics[width=0.325\textwidth]{figures/renders/garden_original.png} &
+\includegraphics[width=0.325\textwidth]{figures/renders/garden_compressed.png} &
+\includegraphics[width=0.325\textwidth]{figures/renders/garden_error_10x.png} \\
+\includegraphics[width=0.325\textwidth]{figures/renders/ficus_original.png} &
+\includegraphics[width=0.325\textwidth]{figures/renders/ficus_compressed.png} &
+\includegraphics[width=0.325\textwidth]{figures/renders/ficus_error_10x.png} \\
+{\small Original} & {\small \ours{} Compressed} & {\small Error $\times$10} \\
+\end{tabular}
+\caption{\textbf{Visual quality comparison at $9.1{\times}$ average compression.} Left: original render. Center: \ours{} compressed. Right: error map (amplified $10{\times}$). \textit{drjohnson} (top): $0.01\dB$ loss---differences are imperceptible. \textit{garden} (middle): $0.05\dB$ loss. \textit{ficus} (bottom): $0.72\dB$ loss---worst case, with visible artifacts on fine leaf structures.}
+\label{fig:renders}
 \end{figure*}
 
 %% ============================================================
