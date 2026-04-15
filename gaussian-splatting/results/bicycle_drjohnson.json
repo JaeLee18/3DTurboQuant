@@ -1,0 +1,10 @@
+{
+  "bicycle": {
+    "overfitting": {"gap": 5.23, "R1": 1.86, "R2": 6.29, "R3": 3.94},
+    "compression": {"ratio": 9.9, "orig_psnr": 20.81, "comp_psnr": 20.60, "drop": 0.21}
+  },
+  "drjohnson": {
+    "overfitting": {"gap": 7.90, "R1": 7.13, "R2": 7.14, "R3": 8.30},
+    "compression": {"ratio": 9.3, "orig_psnr": 29.96, "comp_psnr": 29.94, "drop": 0.01}
+  }
+}
